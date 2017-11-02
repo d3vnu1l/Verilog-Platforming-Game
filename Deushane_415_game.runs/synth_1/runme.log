@@ -1,0 +1,548 @@
+
+*** Running vivado
+    with args -log pong_top_st.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source pong_top_st.tcl
+
+/home/fbuga/opt/xilinx/Vivado/2017.3/bin/ldlibpath.sh: line 17: lsb_release: command not found
+
+****** Vivado v2017.3 (64-bit)
+  **** SW Build 2018833 on Wed Oct  4 19:58:07 MDT 2017
+  **** IP Build 2016188 on Wed Oct  4 21:52:56 MDT 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source pong_top_st.tcl -notrace
+Command: synth_design -top pong_top_st -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16362 
+/home/fbuga/opt/xilinx/Vivado/2017.3/bin/ldlibpath.sh: line 17: lsb_release: command not found
+WARNING: [Synth 8-2611] redeclaration of ansi port point is not allowed [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:38]
+WARNING: [Synth 8-2611] redeclaration of ansi port loss is not allowed [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:38]
+WARNING: [Synth 8-976] point has already been declared [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:38]
+WARNING: [Synth 8-2654] second declaration of point ignored [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:38]
+INFO: [Synth 8-994] point is declared here [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:7]
+INFO: [Synth 8-994] loss is declared here [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:7]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1256.590 ; gain = 84.277 ; free physical = 3026 ; free virtual = 9210
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'pong_top_st' [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/imports/ch13/list_ch13_04_pong_top_st.v:2]
+	Parameter backgroundColor bound to: 12'b111110110011 
+INFO: [Synth 8-638] synthesizing module 'clk_50m_generator' [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/imports/new/clk_50m_generator.v:23]
+INFO: [Synth 8-256] done synthesizing module 'clk_50m_generator' (1#1) [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/imports/new/clk_50m_generator.v:23]
+INFO: [Synth 8-638] synthesizing module 'ps2RX' [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/new/ps2RX.v:1]
+	Parameter idle bound to: 2'b00 
+	Parameter dps bound to: 2'b01 
+	Parameter load bound to: 2'b10 
+INFO: [Synth 8-256] done synthesizing module 'ps2RX' (2#1) [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/new/ps2RX.v:1]
+INFO: [Synth 8-638] synthesizing module 'vga_sync' [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/imports/ch13/list_ch13_01_vga_sync.v:2]
+	Parameter HD bound to: 640 - type: integer 
+	Parameter HF bound to: 48 - type: integer 
+	Parameter HB bound to: 16 - type: integer 
+	Parameter HR bound to: 96 - type: integer 
+	Parameter VD bound to: 480 - type: integer 
+	Parameter VF bound to: 10 - type: integer 
+	Parameter VB bound to: 33 - type: integer 
+	Parameter VR bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'vga_sync' (3#1) [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/imports/ch13/list_ch13_01_vga_sync.v:2]
+INFO: [Synth 8-638] synthesizing module 'pong_graph_st' [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:2]
+	Parameter body_acceleration bound to: 1'b1 
+	Parameter MAX_X bound to: 640 - type: integer 
+	Parameter MAX_Y bound to: 480 - type: integer 
+	Parameter WALL_Y_T bound to: 32 - type: integer 
+	Parameter WALL_Y_B bound to: 35 - type: integer 
+	Parameter BAR_Y_T bound to: 440 - type: integer 
+	Parameter BAR_Y_B bound to: 445 - type: integer 
+	Parameter BAR_X_SIZE bound to: 72 - type: integer 
+	Parameter BAR_V_MAX bound to: 8 - type: integer 
+	Parameter BALL_SIZE bound to: 8 - type: integer 
+	Parameter BALL_V_P bound to: 2 - type: integer 
+	Parameter BALL_V_N bound to: -2 - type: integer 
+WARNING: [Synth 8-151] case item 3'b000 is unreachable [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:74]
+WARNING: [Synth 8-151] case item 3'b001 is unreachable [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:74]
+WARNING: [Synth 8-151] case item 3'b010 is unreachable [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:74]
+WARNING: [Synth 8-151] case item 3'b011 is unreachable [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:74]
+WARNING: [Synth 8-151] case item 3'b100 is unreachable [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:74]
+WARNING: [Synth 8-151] case item 3'b101 is unreachable [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:74]
+WARNING: [Synth 8-151] case item 3'b110 is unreachable [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:74]
+WARNING: [Synth 8-151] case item 3'b111 is unreachable [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:74]
+INFO: [Synth 8-256] done synthesizing module 'pong_graph_st' (4#1) [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:2]
+INFO: [Synth 8-638] synthesizing module 'pong_text' [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/new/pong_text.v:23]
+	Parameter textColor bound to: 12'b001111001100 
+INFO: [Synth 8-638] synthesizing module 'font_rom' [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/new/font_rom.v:8]
+INFO: [Synth 8-256] done synthesizing module 'font_rom' (5#1) [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/new/font_rom.v:8]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/new/pong_text.v:119]
+INFO: [Synth 8-256] done synthesizing module 'pong_text' (6#1) [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/new/pong_text.v:23]
+INFO: [Synth 8-638] synthesizing module 'counter' [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/new/counter.v:2]
+INFO: [Synth 8-256] done synthesizing module 'counter' (7#1) [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/new/counter.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/imports/ch13/list_ch13_04_pong_top_st.v:53]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/imports/ch13/list_ch13_04_pong_top_st.v:59]
+INFO: [Synth 8-256] done synthesizing module 'pong_top_st' (8#1) [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/imports/ch13/list_ch13_04_pong_top_st.v:2]
+WARNING: [Synth 8-3331] design pong_text has unconnected port ball[1]
+WARNING: [Synth 8-3331] design pong_text has unconnected port ball[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1288.840 ; gain = 116.527 ; free physical = 3014 ; free virtual = 9198
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1288.840 ; gain = 116.527 ; free physical = 3014 ; free virtual = 9198
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/constrs_1/imports/415/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/constrs_1/imports/415/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/constrs_1/imports/415/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pong_top_st_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/pong_top_st_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1627.051 ; gain = 0.000 ; free physical = 2670 ; free virtual = 8883
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:31 ; elapsed = 00:00:41 . Memory (MB): peak = 1627.051 ; gain = 454.738 ; free physical = 2812 ; free virtual = 9020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:31 ; elapsed = 00:00:41 . Memory (MB): peak = 1627.051 ; gain = 454.738 ; free physical = 2812 ; free virtual = 9020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:31 ; elapsed = 00:00:41 . Memory (MB): peak = 1627.051 ; gain = 454.738 ; free physical = 2814 ; free virtual = 9022
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "n_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element v_count_reg_reg was removed.  [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/imports/ch13/list_ch13_01_vga_sync.v:38]
+WARNING: [Synth 8-6014] Unused sequential element h_count_reg_reg was removed.  [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/imports/ch13/list_ch13_01_vga_sync.v:39]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:155]
+WARNING: [Synth 8-6014] Unused sequential element bar_x_reg_reg was removed.  [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:98]
+WARNING: [Synth 8-6014] Unused sequential element ball_x_reg_reg was removed.  [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:99]
+WARNING: [Synth 8-6014] Unused sequential element ball_y_reg_reg was removed.  [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:100]
+WARNING: [Synth 8-6014] Unused sequential element addr_reg_reg was removed.  [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/new/font_rom.v:20]
+INFO: [Synth 8-5544] ROM "char_addr_l" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "char_addr_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "dig1_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "btnreg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "btnreg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dc" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'btnLast_reg' [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:153]
+WARNING: [Synth 8-327] inferring latch for variable 'move_reg' [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:154]
+WARNING: [Synth 8-327] inferring latch for variable 'bar_velocity_reg' [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:156]
+WARNING: [Synth 8-327] inferring latch for variable 'char_addr_r_reg' [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/new/pong_text.v:121]
+WARNING: [Synth 8-327] inferring latch for variable 'rgb_next_reg' [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/imports/ch13/list_ch13_04_pong_top_st.v:75]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:32 ; elapsed = 00:00:43 . Memory (MB): peak = 1627.051 ; gain = 454.738 ; free physical = 2808 ; free virtual = 9013
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 8     
+	   2 Input      4 Bit       Adders := 6     
+	   3 Input      3 Bit       Adders := 2     
++---Registers : 
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	               10 Bit    Registers := 7     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 5     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 12    
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   5 Input     12 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 9     
+	   2 Input     10 Bit        Muxes := 4     
+	   8 Input      8 Bit        Muxes := 1     
+	  14 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	  16 Input      7 Bit        Muxes := 1     
+	  64 Input      7 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 16    
+	   2 Input      3 Bit        Muxes := 3     
+	   3 Input      2 Bit        Muxes := 2     
+	   4 Input      2 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 12    
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module pong_top_st 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 3     
+	   4 Input      2 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module clk_50m_generator 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module ps2RX 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+Module vga_sync 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     10 Bit        Muxes := 2     
+Module pong_graph_st 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 6     
+	   2 Input      4 Bit       Adders := 1     
+	   3 Input      3 Bit       Adders := 2     
++---Registers : 
+	               10 Bit    Registers := 5     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   5 Input     12 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 2     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module font_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               11 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module pong_text 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     12 Bit        Muxes := 6     
+	  14 Input      7 Bit        Muxes := 1     
+	   2 Input      7 Bit        Muxes := 1     
+	  16 Input      7 Bit        Muxes := 1     
+	  64 Input      7 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      3 Bit        Muxes := 3     
+Module counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 2     
++---Registers : 
+	                4 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "btnreg" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element text_unit/font_unit/addr_reg_reg was removed.  [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/new/font_rom.v:20]
+WARNING: [Synth 8-6014] Unused sequential element vsync_unit/h_count_reg_reg was removed.  [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/imports/ch13/list_ch13_01_vga_sync.v:39]
+WARNING: [Synth 8-6014] Unused sequential element vsync_unit/v_count_reg_reg was removed.  [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/imports/ch13/list_ch13_01_vga_sync.v:38]
+WARNING: [Synth 8-6014] Unused sequential element pong_grf_unit/ball_x_reg_reg was removed.  [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:99]
+WARNING: [Synth 8-6014] Unused sequential element pong_grf_unit/bar_x_reg_reg was removed.  [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:98]
+WARNING: [Synth 8-6014] Unused sequential element pong_grf_unit/ball_y_reg_reg was removed.  [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:100]
+INFO: [Synth 8-3886] merging instance 'pong_grf_unit/y_delta_reg_reg[3]' (FDCE) to 'pong_grf_unit/y_delta_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'pong_grf_unit/y_delta_reg_reg[4]' (FDCE) to 'pong_grf_unit/y_delta_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'pong_grf_unit/y_delta_reg_reg[5]' (FDCE) to 'pong_grf_unit/y_delta_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'pong_grf_unit/y_delta_reg_reg[6]' (FDCE) to 'pong_grf_unit/y_delta_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'pong_grf_unit/y_delta_reg_reg[7]' (FDCE) to 'pong_grf_unit/y_delta_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'pong_grf_unit/y_delta_reg_reg[8]' (FDCE) to 'pong_grf_unit/y_delta_reg_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/y_delta_reg_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/x_delta_reg_reg[0] )
+INFO: [Synth 8-3886] merging instance 'pong_grf_unit/x_delta_reg_reg[3]' (FDCE) to 'pong_grf_unit/x_delta_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'pong_grf_unit/x_delta_reg_reg[4]' (FDCE) to 'pong_grf_unit/x_delta_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'pong_grf_unit/x_delta_reg_reg[5]' (FDCE) to 'pong_grf_unit/x_delta_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'pong_grf_unit/x_delta_reg_reg[6]' (FDCE) to 'pong_grf_unit/x_delta_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'pong_grf_unit/x_delta_reg_reg[7]' (FDCE) to 'pong_grf_unit/x_delta_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'pong_grf_unit/x_delta_reg_reg[8]' (FDCE) to 'pong_grf_unit/x_delta_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'rgb_next_reg[3]' (LDC) to 'rgb_next_reg[2]'
+INFO: [Synth 8-3886] merging instance 'rgb_next_reg[11]' (LDC) to 'rgb_next_reg[10]'
+INFO: [Synth 8-3886] merging instance 'rgb_reg_reg[3]' (FDE) to 'rgb_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'rgb_reg_reg[11]' (FDE) to 'rgb_reg_reg[10]'
+WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/bar_velocity_reg[3]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/bar_velocity_reg[2]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/bar_velocity_reg[1]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/bar_velocity_reg[0]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/bar_velocity_reg[3]__0) is unused and will be removed from module pong_top_st.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'pong_grf_unit/bar_velocity_reg[3]__0/Q' [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:103]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:103]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:103]
+WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/bar_velocity_reg[2]__0) is unused and will be removed from module pong_top_st.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'pong_grf_unit/bar_velocity_reg[2]__0/Q' [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:103]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:103]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:103]
+WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/bar_velocity_reg[1]__0) is unused and will be removed from module pong_top_st.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'pong_grf_unit/bar_velocity_reg[1]__0/Q' [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:103]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:103]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:103]
+WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/bar_velocity_reg[0]__0) is unused and will be removed from module pong_top_st.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'pong_grf_unit/bar_velocity_reg[0]__0/Q' [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:103]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:103]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:103]
+WARNING: [Synth 8-3332] Sequential element (text_unit/char_addr_r_reg[6]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (text_unit/char_addr_r_reg[5]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (text_unit/char_addr_r_reg[4]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (text_unit/char_addr_r_reg[3]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (text_unit/char_addr_r_reg[2]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (text_unit/char_addr_r_reg[1]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (text_unit/char_addr_r_reg[0]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (ps2_rx_unit/b_reg_reg[0]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/x_delta_reg_reg[0]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/y_delta_reg_reg[0]) is unused and will be removed from module pong_top_st.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/ball_y_reg0_inferred /\pong_grf_unit/ball_y_reg_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/ball_x_reg0_inferred /\pong_grf_unit/ball_x_reg_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/ball_x_reg_reg[0]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/ball_y_reg_reg[0]) is unused and will be removed from module pong_top_st.
+INFO: [Synth 8-3886] merging instance 'rgb_next_reg[1]' (LDC) to 'rgb_next_reg[5]'
+INFO: [Synth 8-3886] merging instance 'rgb_reg_reg[1]' (FDE) to 'rgb_reg_reg[5]'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:45 . Memory (MB): peak = 1627.051 ; gain = 454.738 ; free physical = 2790 ; free virtual = 8994
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+----------------------------------+---------------+----------------+
+|Module Name | RTL Object                       | Depth x Width | Implemented As | 
++------------+----------------------------------+---------------+----------------+
+|font_rom    | addr_reg_reg                     | 2048x8        | Block RAM      | 
+|pong_top_st | text_unit/font_unit/addr_reg_reg | 2048x8        | Block RAM      | 
+|pong_top_st | text_unit/char_addr_r            | 64x7          | LUT            | 
++------------+----------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:00:56 . Memory (MB): peak = 1627.051 ; gain = 454.738 ; free physical = 2678 ; free virtual = 8879
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:00:56 . Memory (MB): peak = 1627.051 ; gain = 454.738 ; free physical = 2678 ; free virtual = 8879
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance text_unit/font_unit/addr_reg_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:00:56 . Memory (MB): peak = 1631.074 ; gain = 458.762 ; free physical = 2675 ; free virtual = 8876
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:57 . Memory (MB): peak = 1631.074 ; gain = 458.762 ; free physical = 2675 ; free virtual = 8876
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:57 . Memory (MB): peak = 1631.074 ; gain = 458.762 ; free physical = 2675 ; free virtual = 8876
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:57 . Memory (MB): peak = 1631.074 ; gain = 458.762 ; free physical = 2675 ; free virtual = 8876
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:57 . Memory (MB): peak = 1631.074 ; gain = 458.762 ; free physical = 2675 ; free virtual = 8876
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:57 . Memory (MB): peak = 1631.074 ; gain = 458.762 ; free physical = 2675 ; free virtual = 8876
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:00:57 . Memory (MB): peak = 1631.074 ; gain = 458.762 ; free physical = 2675 ; free virtual = 8876
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |BUFG     |     2|
+|2     |CARRY4   |    29|
+|3     |LUT1     |     4|
+|4     |LUT2     |    63|
+|5     |LUT3     |    26|
+|6     |LUT4     |    87|
+|7     |LUT5     |    57|
+|8     |LUT6     |    91|
+|9     |MUXF7    |     4|
+|10    |RAMB18E1 |     1|
+|11    |FDCE     |    97|
+|12    |FDPE     |     2|
+|13    |FDRE     |    18|
+|14    |LD       |     4|
+|15    |LDC      |     9|
+|16    |IBUF     |     5|
+|17    |OBUF     |    32|
++------+---------+------+
+
+Report Instance Areas: 
++------+----------------+------------------+------+
+|      |Instance        |Module            |Cells |
++------+----------------+------------------+------+
+|1     |top             |                  |   531|
+|2     |  losses        |counter           |    17|
+|3     |  myclk         |clk_50m_generator |     2|
+|4     |  pong_grf_unit |pong_graph_st     |   214|
+|5     |  ps2_rx_unit   |ps2RX             |    46|
+|6     |  score         |counter_0         |    15|
+|7     |  text_unit     |pong_text         |     3|
+|8     |    font_unit   |font_rom          |     3|
+|9     |  vsync_unit    |vga_sync          |   174|
++------+----------------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:57 . Memory (MB): peak = 1631.074 ; gain = 458.762 ; free physical = 2675 ; free virtual = 8876
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 12 critical warnings and 37 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 1631.074 ; gain = 120.551 ; free physical = 2727 ; free virtual = 8928
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:57 . Memory (MB): peak = 1631.082 ; gain = 458.762 ; free physical = 2729 ; free virtual = 8930
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 52 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 13 instances were transformed.
+  LD => LDCE: 4 instances
+  LDC => LDCE: 9 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+66 Infos, 51 Warnings, 12 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:46 ; elapsed = 00:00:58 . Memory (MB): peak = 1631.082 ; gain = 472.145 ; free physical = 2725 ; free virtual = 8926
+INFO: [Common 17-1381] The checkpoint '/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.runs/synth_1/pong_top_st.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file pong_top_st_utilization_synth.rpt -pb pong_top_st_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1655.086 ; gain = 0.000 ; free physical = 2725 ; free virtual = 8927
+INFO: [Common 17-206] Exiting Vivado at Thu Nov  2 13:49:12 2017...
