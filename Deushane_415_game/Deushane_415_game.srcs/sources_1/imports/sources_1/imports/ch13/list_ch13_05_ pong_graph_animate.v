@@ -21,7 +21,7 @@ module pong_graph_st
      reg [9:0] y_delta_reg, y_delta_next;
      //round ball
      wire [2:0] rom_addr, rom_col;
-     reg [7:0] rom_data, rom_x;
+     reg [7:0]  rom_x;
      wire rom_bit;
      //object output signals
      wire wall_on, floor_on, l1_on, l2_on, l3_on, l4_on, l5_on, l6_on, l7_on, bar_on, sq_ball_on, rd_ball_on;
@@ -36,7 +36,7 @@ module pong_graph_st
      reg [1:0] btnLast;
      reg last_m, last_h;
      reg point, loss;
-     reg hit, miss, miss_reg, hit_reg;
+     reg hit, miss, miss_reg, hit_reg;;
      
    
    // constant and signal declaration
@@ -103,7 +103,7 @@ module pong_graph_st
   
    // ball velocity can be pos or neg)
    localparam BALL_V_P = 2;
-   localparam BALL_V_N = -2;
+   localparam BArd_ball_onLL_V_N = -2;
    
     // wall rgb output
      assign wall_rgb = 12'h000; // blue
@@ -121,15 +121,6 @@ module pong_graph_st
 
    always @*
    case (rom_addr)
-      3'h0: rom_data = 8'b10011001; //   
-      3'h1: rom_data = 8'b01000010; // 
-      3'h2: rom_data = 8'b00100100; // 
-      3'h3: rom_data = 8'b10011001; // 
-      3'h4: rom_data = 8'b10011001; // 
-      3'h5: rom_data = 8'b00100100; // 
-      3'h6: rom_data = 8'b01000010; // 
-      3'h7: rom_data = 8'b10011001; //  
-      
       3'h0: rom_x = 8'b10000001; //   
       3'h1: rom_x = 8'b01000010; // 
       3'h2: rom_x = 8'b00100100; // 
@@ -186,7 +177,7 @@ module pong_graph_st
    // pixel within wall
    assign wall_on = (WALL_Y_T<=pix_y) && (pix_y<=WALL_Y_B);
    // pixel for floor
-  assign floor_on = (FLOOR_Y_T<=pix_y) && (pix_y<=FLOOR_Y_B);
+  //assign floor_on = (FLOOR_Y_T<=pix_y) && (pix_y<=FLOOR_Y_B);
    // levels wall on
    assign l1_on = (WALL_Y_T_1<=pix_y) && (pix_y<=WALL_Y_B_1) && (WALL_X_L_1<=pix_x) && (pix_x<=WALL_X_R_1);
    assign l2_on = (WALL_Y_T_2<=pix_y) && (pix_y<=WALL_Y_B_2) && (WALL_X_L_2<=pix_x) && (pix_x<=WALL_X_R_2);
@@ -236,7 +227,7 @@ module pong_graph_st
    // map current pixel location to ROM addr/col
    assign rom_addr = pix_y[2:0] - ball_y_t[2:0];
    assign rom_col = pix_x[2:0] - ball_x_l[2:0];
-   assign rom_bit = rom_data[rom_col];
+   assign rom_bit = rom_x[rom_col];
    assign rd_ball_on = sq_ball_on & rom_bit; // pixel within ball
 
   
