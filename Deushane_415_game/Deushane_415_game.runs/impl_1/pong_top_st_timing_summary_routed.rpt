@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.3 (lin64) Build 2018833 Wed Oct  4 19:58:07 MDT 2017
-| Date         : Thu Nov  9 14:21:31 2017
+| Date         : Tue Nov 14 13:33:06 2017
 | Host         : archlinux running 64-bit unknown
 | Command      : report_timing_summary -file pong_top_st_timing_summary_routed.rpt -warn_on_violation -rpx pong_top_st_timing_summary_routed.rpx
 | Design       : pong_top_st
@@ -58,7 +58,7 @@ Table of Contents
 
  There are 2 register/latch pins with no clock driven by root clock pin: btnreg_reg[1]/Q (HIGH)
 
- There are 90 register/latch pins with no clock driven by root clock pin: myclk/clk_reg_reg/Q (HIGH)
+ There are 88 register/latch pins with no clock driven by root clock pin: myclk/clk_reg_reg/Q (HIGH)
 
  There are 2 register/latch pins with no clock driven by root clock pin: pong_grf_unit/btnLast_reg[0]/Q (HIGH)
 
@@ -82,11 +82,11 @@ Table of Contents
 
  There are 4 register/latch pins with no clock driven by root clock pin: vsync_unit/h_count_reg_reg[6]/Q (HIGH)
 
- There are 14 register/latch pins with no clock driven by root clock pin: vsync_unit/h_count_reg_reg[7]/Q (HIGH)
+ There are 12 register/latch pins with no clock driven by root clock pin: vsync_unit/h_count_reg_reg[7]/Q (HIGH)
 
- There are 14 register/latch pins with no clock driven by root clock pin: vsync_unit/h_count_reg_reg[8]/Q (HIGH)
+ There are 12 register/latch pins with no clock driven by root clock pin: vsync_unit/h_count_reg_reg[8]/Q (HIGH)
 
- There are 14 register/latch pins with no clock driven by root clock pin: vsync_unit/h_count_reg_reg[9]/Q (HIGH)
+ There are 12 register/latch pins with no clock driven by root clock pin: vsync_unit/h_count_reg_reg[9]/Q (HIGH)
 
  There are 4 register/latch pins with no clock driven by root clock pin: vsync_unit/v_count_reg_reg[0]/Q (HIGH)
 
@@ -98,15 +98,15 @@ Table of Contents
 
  There are 4 register/latch pins with no clock driven by root clock pin: vsync_unit/v_count_reg_reg[4]/Q (HIGH)
 
- There are 14 register/latch pins with no clock driven by root clock pin: vsync_unit/v_count_reg_reg[5]/Q (HIGH)
+ There are 12 register/latch pins with no clock driven by root clock pin: vsync_unit/v_count_reg_reg[5]/Q (HIGH)
 
- There are 14 register/latch pins with no clock driven by root clock pin: vsync_unit/v_count_reg_reg[6]/Q (HIGH)
+ There are 12 register/latch pins with no clock driven by root clock pin: vsync_unit/v_count_reg_reg[6]/Q (HIGH)
 
- There are 14 register/latch pins with no clock driven by root clock pin: vsync_unit/v_count_reg_reg[7]/Q (HIGH)
+ There are 12 register/latch pins with no clock driven by root clock pin: vsync_unit/v_count_reg_reg[7]/Q (HIGH)
 
- There are 14 register/latch pins with no clock driven by root clock pin: vsync_unit/v_count_reg_reg[8]/Q (HIGH)
+ There are 12 register/latch pins with no clock driven by root clock pin: vsync_unit/v_count_reg_reg[8]/Q (HIGH)
 
- There are 14 register/latch pins with no clock driven by root clock pin: vsync_unit/v_count_reg_reg[9]/Q (HIGH)
+ There are 12 register/latch pins with no clock driven by root clock pin: vsync_unit/v_count_reg_reg[9]/Q (HIGH)
 
 
 2. checking constant_clock
@@ -121,7 +121,7 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 340 pins that are not constrained for maximum delay. (HIGH)
+ There are 332 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 

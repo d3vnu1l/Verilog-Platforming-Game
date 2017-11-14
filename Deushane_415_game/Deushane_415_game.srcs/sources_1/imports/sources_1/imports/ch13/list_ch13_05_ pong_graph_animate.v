@@ -20,7 +20,7 @@ module pong_graph_st
      reg [9:0] x_delta_reg, x_delta_next;// reg to track ball speed
      reg [9:0] y_delta_reg, y_delta_next;
      //round ball
-     wire [2:0] rom_addr, rom_col;
+     wire [3:0] rom_addr, rom_col;
      reg [7:0]  rom_x;
      wire rom_bit;
      //object output signals
@@ -103,7 +103,7 @@ module pong_graph_st
   
    // ball velocity can be pos or neg)
    localparam BALL_V_P = 2;
-   localparam BArd_ball_onLL_V_N = -2;
+   localparam BALL_V_N = -2;
    
     // wall rgb output
      assign wall_rgb = 12'h000; // blue
@@ -121,14 +121,22 @@ module pong_graph_st
 
    always @*
    case (rom_addr)
-      3'h0: rom_x = 8'b10000001; //   
-      3'h1: rom_x = 8'b01000010; // 
-      3'h2: rom_x = 8'b00100100; // 
-      3'h3: rom_x = 8'b00011000; // 
-      3'h4: rom_x = 8'b00011000; // 
-      3'h5: rom_x = 8'b00100100; // 
-      3'h6: rom_x = 8'b01000010; // 
-      3'h7: rom_x = 8'b10000001; //
+      4'h0: rom_x = 16'b0000000100000000; //   
+      4'h1: rom_x = 16'b0000001010000000; // 
+      4'h2: rom_x = 16'b0000010001000000; // 
+      4'h3: rom_x = 16'b0000010010000000; // 
+      4'h4: rom_x = 16'b0000001010000000; // 
+      4'h5: rom_x = 16'b0000000100000000; // 
+      4'h6: rom_x = 16'b0000011111000000; // 
+      4'h7: rom_x = 16'b0000010101000000; //
+      4'h8: rom_x = 16'b0000010101000000; //   
+      4'h9: rom_x = 16'b0000010101000000; // 
+      4'ha: rom_x = 16'b0000000100000000; // 
+      4'hb: rom_x = 16'b0000001010000000; // 
+      4'hc: rom_x = 16'b0000010001000000; // 
+      4'hd: rom_x = 16'b0000010001000000; // 
+      4'he: rom_x = 16'b0000010001000000; // 
+      4'hf: rom_x = 16'b0000010001000000; //
    endcase
 
    // registers
@@ -192,8 +200,7 @@ module pong_graph_st
    assign bar_x_l = bar_x_reg;
    assign bar_x_r = bar_x_l + BAR_X_SIZE - 1;
    // pixel within bar
-   assign bar_on = (BAR_Y_T<=pix_y) && (pix_y<=BAR_Y_B) &&
-                   (bar_x_l<=pix_x) && (pix_x<=bar_x_r);
+   assign bar_on = (BAR_Y_T<=pix_y) && (pix_y<=BAR_Y_B) && (bar_x_l<=pix_x) && (pix_x<=bar_x_r);
    assign graph_on = l1_on | l2_on | l3_on | l4_on | l5_on | l6_on | l7_on | wall_on | floor_on | bar_on | rd_ball_on;
    
    // new bar y-position
@@ -225,8 +232,8 @@ module pong_graph_st
    // pixel within ball
    assign sq_ball_on = (ball_x_l<=pix_x) && (pix_x<=ball_x_r) && (ball_y_t<=pix_y) && (pix_y<=ball_y_b);
    // map current pixel location to ROM addr/col
-   assign rom_addr = pix_y[2:0] - ball_y_t[2:0];
-   assign rom_col = pix_x[2:0] - ball_x_l[2:0];
+   assign rom_addr = pix_y[3:0] - ball_y_t[3:0];
+   assign rom_col = pix_x[3:0] - ball_x_l[3:0];
    assign rom_bit = rom_x[rom_col];
    assign rd_ball_on = sq_ball_on & rom_bit; // pixel within ball
 

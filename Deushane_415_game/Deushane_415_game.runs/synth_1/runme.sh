@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.runs/synth_1'
+HD_PWD='/home/fbuga/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

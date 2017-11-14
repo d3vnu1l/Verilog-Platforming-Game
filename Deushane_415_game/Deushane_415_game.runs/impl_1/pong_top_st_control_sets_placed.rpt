@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.3 (lin64) Build 2018833 Wed Oct  4 19:58:07 MDT 2017
-| Date         : Thu Nov  9 14:21:03 2017
+| Date         : Tue Nov 14 13:32:37 2017
 | Host         : archlinux running 64-bit unknown
 | Command      : report_control_sets -file pong_top_st_control_sets_placed.rpt
 | Design       : pong_top_st
@@ -32,9 +32,9 @@ Table of Contents
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |              13 |            6 |
-| No           | No                    | Yes                    |              21 |           10 |
-| No           | Yes                   | No                     |              10 |            4 |
-| Yes          | No                    | No                     |              10 |            4 |
+| No           | No                    | Yes                    |              21 |           11 |
+| No           | Yes                   | No                     |               8 |            6 |
+| Yes          | No                    | No                     |               8 |            2 |
 | Yes          | No                    | Yes                    |              78 |           30 |
 | Yes          | Yes                   | No                     |               0 |            0 |
 +--------------+-----------------------+------------------------+-----------------+--------------+

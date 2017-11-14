@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.3 (lin64) Build 2018833 Wed Oct  4 19:58:07 MDT 2017
-| Date             : Thu Nov  9 14:21:31 2017
+| Date             : Tue Nov 14 13:33:06 2017
 | Host             : archlinux running 64-bit unknown
 | Command          : report_power -file pong_top_st_power_routed.rpt -pb pong_top_st_power_summary_routed.pb -rpx pong_top_st_power_routed.rpx
 | Design           : pong_top_st
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.581        |
+| Total On-Chip Power (W)  | 1.637        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.479        |
-| Device Static (W)        | 0.102        |
+| Dynamic (W)              | 1.534        |
+| Device Static (W)        | 0.103        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 77.8         |
-| Junction Temperature (C) | 32.2         |
+| Max Ambient (C)          | 77.5         |
+| Junction Temperature (C) | 32.5         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,18 +52,18 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.395 |      570 |       --- |             --- |
-|   LUT as Logic |     0.290 |      285 |     63400 |            0.45 |
+| Slice Logic    |     0.418 |      550 |       --- |             --- |
+|   LUT as Logic |     0.314 |      277 |     63400 |            0.44 |
 |   BUFG         |     0.052 |        2 |        32 |            6.25 |
 |   CARRY4       |     0.042 |       29 |     15850 |            0.18 |
-|   Register     |     0.010 |      132 |    126800 |            0.10 |
-|   F7/F8 Muxes  |     0.001 |        5 |     63400 |           <0.01 |
+|   Register     |     0.010 |      128 |    126800 |            0.10 |
+|   F7/F8 Muxes  |    <0.001 |        4 |     63400 |           <0.01 |
 |   Others       |     0.000 |       12 |       --- |             --- |
-| Signals        |     0.363 |      389 |       --- |             --- |
-| Block RAM      |     0.479 |      0.5 |       135 |            0.37 |
-| I/O            |     0.242 |       37 |       210 |           17.62 |
-| Static Power   |     0.102 |          |           |                 |
-| Total          |     1.581 |          |           |                 |
+| Signals        |     0.392 |      375 |       --- |             --- |
+| Block RAM      |     0.483 |      0.5 |       135 |            0.37 |
+| I/O            |     0.241 |       37 |       210 |           17.62 |
+| Static Power   |     0.103 |          |           |                 |
+| Total          |     1.637 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,7 +73,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     1.230 |       1.210 |      0.020 |
+| Vccint    |       1.000 |     1.287 |       1.267 |      0.020 |
 | Vccaux    |       1.800 |     0.027 |       0.008 |      0.019 |
 | Vcco33    |       3.300 |     0.069 |       0.065 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -140,15 +140,15 @@ Table of Contents
 +-----------------+-----------+
 | Name            | Power (W) |
 +-----------------+-----------+
-| pong_top_st     |     1.479 |
+| pong_top_st     |     1.534 |
 |   losses        |    <0.001 |
 |   myclk         |     0.021 |
-|   pong_grf_unit |     0.093 |
-|   ps2_rx_unit   |     0.032 |
+|   pong_grf_unit |     0.074 |
+|   ps2_rx_unit   |     0.035 |
 |   score         |    <0.001 |
-|   text_unit     |     0.527 |
-|     font_unit   |     0.527 |
-|   vsync_unit    |     0.419 |
+|   text_unit     |     0.536 |
+|     font_unit   |     0.536 |
+|   vsync_unit    |     0.487 |
 +-----------------+-----------+
 
 

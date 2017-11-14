@@ -69,12 +69,12 @@ set rc [catch {
   create_project -in_memory -part xc7a100tcsg324-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir /home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.cache/wt [current_project]
-  set_property parent.project_path /home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.xpr [current_project]
-  set_property ip_output_repo /home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.cache/ip [current_project]
+  set_property webtalk.parent_dir /home/fbuga/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.cache/wt [current_project]
+  set_property parent.project_path /home/fbuga/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.xpr [current_project]
+  set_property ip_output_repo /home/fbuga/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet /home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.runs/synth_1/pong_top_st.dcp
-  read_xdc /home/fbuga/Documents/415/Deushane_415_game/Deushane_415_game.srcs/constrs_1/imports/415/Nexys4DDR_Master.xdc
+  add_files -quiet /home/fbuga/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.runs/synth_1/pong_top_st.dcp
+  read_xdc /home/fbuga/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/constrs_1/imports/415/Nexys4DDR_Master.xdc
   link_design -top pong_top_st -part xc7a100tcsg324-1
   close_msg_db -file init_design.pb
 } RESULT]
