@@ -24,7 +24,7 @@ module pong_graph_st
      reg [7:0]  rom_x;
      wire rom_bit;
      //object output signals
-     wire wall_on, floor_on, l1_on, l2_on, l3_on, l4_on, l5_on, l6_on, l7_on, bar_on, sq_ball_on, rd_ball_on;
+     wire wall_on, floor_on, l1_on, l2_on, l3_on, l4_on, l5_on, l6_on, l7_on, bar_on, sq_ball_on, ball_on;
      wire [11:0] wall_rgb, floor_rgb, l1_rgb, l2_rgb, l3_rgb, l4_rgb, l5_rgb, l6_rgb, l7_rgb, bar_rgb, ball_rgb;
      reg [11:0] ball_strobe;
      
@@ -201,7 +201,7 @@ module pong_graph_st
    assign bar_x_r = bar_x_l + BAR_X_SIZE - 1;
    // pixel within bar
    assign bar_on = (BAR_Y_T<=pix_y) && (pix_y<=BAR_Y_B) && (bar_x_l<=pix_x) && (pix_x<=bar_x_r);
-   assign graph_on = l1_on | l2_on | l3_on | l4_on | l5_on | l6_on | l7_on | wall_on | floor_on | bar_on | rd_ball_on;
+   assign graph_on = l1_on | l2_on | l3_on | l4_on | l5_on | l6_on | l7_on | wall_on | floor_on | bar_on | ball_on;
    
    // new bar y-position
    always @* begin
@@ -235,7 +235,7 @@ module pong_graph_st
    assign rom_addr = pix_y[3:0] - ball_y_t[3:0];
    assign rom_col = pix_x[3:0] - ball_x_l[3:0];
    assign rom_bit = rom_x[rom_col];
-   assign rd_ball_on = sq_ball_on & rom_bit; // pixel within ball
+   assign ball_on = sq_ball_on & rom_bit; // pixel within ball
 
   
    assign ball_x_next = (refr_tick) ? ball_x_reg+x_delta_reg : ball_x_reg ; // new ball position
