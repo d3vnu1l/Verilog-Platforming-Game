@@ -14,26 +14,20 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 8724 
-WARNING: [Synth 8-2611] redeclaration of ansi port point is not allowed [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:34]
-WARNING: [Synth 8-2611] redeclaration of ansi port loss is not allowed [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:34]
-WARNING: [Synth 8-976] point has already been declared [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:34]
-WARNING: [Synth 8-2654] second declaration of point ignored [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:34]
-INFO: [Synth 8-994] point is declared here [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:7]
-INFO: [Synth 8-994] loss is declared here [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:7]
+INFO: Helper process launched with PID 6296 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 318.563 ; gain = 87.781
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 309.793 ; gain = 78.848
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'pong_top_st' [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/imports/ch13/list_ch13_04_pong_top_st.v:2]
+INFO: [Synth 8-638] synthesizing module 'pong_top_st' [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/imports/ch13/list_ch13_04_pong_top_st.v:2]
 	Parameter backgroundColor bound to: 12'b110001101111 
-INFO: [Synth 8-638] synthesizing module 'clk_50m_generator' [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/imports/new/clk_50m_generator.v:23]
-INFO: [Synth 8-256] done synthesizing module 'clk_50m_generator' (1#1) [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/imports/new/clk_50m_generator.v:23]
-INFO: [Synth 8-638] synthesizing module 'ps2RX' [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/new/ps2RX.v:1]
+INFO: [Synth 8-638] synthesizing module 'clk_50m_generator' [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/imports/new/clk_50m_generator.v:23]
+INFO: [Synth 8-256] done synthesizing module 'clk_50m_generator' (1#1) [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/imports/new/clk_50m_generator.v:23]
+INFO: [Synth 8-638] synthesizing module 'ps2RX' [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/new/ps2RX.v:1]
 	Parameter idle bound to: 2'b00 
 	Parameter dps bound to: 2'b01 
 	Parameter load bound to: 2'b10 
-INFO: [Synth 8-256] done synthesizing module 'ps2RX' (2#1) [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/new/ps2RX.v:1]
-INFO: [Synth 8-638] synthesizing module 'vga_sync' [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/imports/ch13/list_ch13_01_vga_sync.v:2]
+INFO: [Synth 8-256] done synthesizing module 'ps2RX' (2#1) [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/new/ps2RX.v:1]
+INFO: [Synth 8-638] synthesizing module 'vga_sync' [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/imports/ch13/list_ch13_01_vga_sync.v:2]
 	Parameter HD bound to: 640 - type: integer 
 	Parameter HF bound to: 48 - type: integer 
 	Parameter HB bound to: 16 - type: integer 
@@ -42,8 +36,8 @@ INFO: [Synth 8-638] synthesizing module 'vga_sync' [C:/Users/ryan/Desktop/Deusha
 	Parameter VF bound to: 10 - type: integer 
 	Parameter VB bound to: 33 - type: integer 
 	Parameter VR bound to: 2 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'vga_sync' (3#1) [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/imports/ch13/list_ch13_01_vga_sync.v:2]
-INFO: [Synth 8-638] synthesizing module 'pong_graph_st' [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:2]
+INFO: [Synth 8-256] done synthesizing module 'vga_sync' (3#1) [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/imports/ch13/list_ch13_01_vga_sync.v:2]
+INFO: [Synth 8-638] synthesizing module 'pong_graph_st' [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:2]
 	Parameter BALL_SIZE bound to: 16 - type: integer 
 	Parameter MAX_X bound to: 640 - type: integer 
 	Parameter MAX_Y bound to: 480 - type: integer 
@@ -64,29 +58,30 @@ INFO: [Synth 8-638] synthesizing module 'pong_graph_st' [C:/Users/ryan/Desktop/D
 	Parameter WALL_X_L_7 bound to: 0 - type: integer 
 	Parameter WALL_X_R_7 bound to: 300 - type: integer 
 	Parameter WALL_SIZE_Y bound to: 20 - type: integer 
-WARNING: [Synth 8-6014] Unused sequential element start_reg was removed.  [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:128]
-WARNING: [Synth 8-5788] Register hit_reg_reg in module pong_graph_st is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:149]
-WARNING: [Synth 8-5788] Register miss_reg_reg in module pong_graph_st is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:150]
-WARNING: [Synth 8-5788] Register loss_reg in module pong_graph_st is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:174]
-WARNING: [Synth 8-5788] Register last_m_reg in module pong_graph_st is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:173]
-WARNING: [Synth 8-5788] Register point_reg in module pong_graph_st is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:179]
-WARNING: [Synth 8-5788] Register last_h_reg in module pong_graph_st is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:178]
-INFO: [Synth 8-256] done synthesizing module 'pong_graph_st' (4#1) [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:2]
-INFO: [Synth 8-638] synthesizing module 'pong_text' [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/new/pong_text.v:23]
+WARNING: [Synth 8-6014] Unused sequential element start_reg was removed.  [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:151]
+WARNING: [Synth 8-5788] Register hit_reg_reg in module pong_graph_st is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:172]
+WARNING: [Synth 8-5788] Register miss_reg_reg in module pong_graph_st is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:173]
+WARNING: [Synth 8-5788] Register loss_reg in module pong_graph_st is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:203]
+WARNING: [Synth 8-5788] Register last_m_reg in module pong_graph_st is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:202]
+WARNING: [Synth 8-5788] Register point_reg in module pong_graph_st is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:208]
+WARNING: [Synth 8-5788] Register last_h_reg in module pong_graph_st is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:207]
+WARNING: [Synth 8-3848] Net hit in module/entity pong_graph_st does not have driver. [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:36]
+INFO: [Synth 8-256] done synthesizing module 'pong_graph_st' (4#1) [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:2]
+INFO: [Synth 8-638] synthesizing module 'pong_text' [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/new/pong_text.v:23]
 	Parameter textColor bound to: 12'b001111001100 
-INFO: [Synth 8-638] synthesizing module 'font_rom' [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/new/font_rom.v:8]
-INFO: [Synth 8-256] done synthesizing module 'font_rom' (5#1) [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/new/font_rom.v:8]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/new/pong_text.v:119]
-INFO: [Synth 8-256] done synthesizing module 'pong_text' (6#1) [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/new/pong_text.v:23]
-INFO: [Synth 8-638] synthesizing module 'counter' [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/new/counter.v:2]
-INFO: [Synth 8-256] done synthesizing module 'counter' (7#1) [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/new/counter.v:2]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/imports/ch13/list_ch13_04_pong_top_st.v:53]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/imports/ch13/list_ch13_04_pong_top_st.v:59]
-INFO: [Synth 8-256] done synthesizing module 'pong_top_st' (8#1) [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/imports/ch13/list_ch13_04_pong_top_st.v:2]
+INFO: [Synth 8-638] synthesizing module 'font_rom' [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/new/font_rom.v:8]
+INFO: [Synth 8-256] done synthesizing module 'font_rom' (5#1) [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/new/font_rom.v:8]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/new/pong_text.v:119]
+INFO: [Synth 8-256] done synthesizing module 'pong_text' (6#1) [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/new/pong_text.v:23]
+INFO: [Synth 8-638] synthesizing module 'counter' [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/new/counter.v:2]
+INFO: [Synth 8-256] done synthesizing module 'counter' (7#1) [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/new/counter.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/imports/ch13/list_ch13_04_pong_top_st.v:55]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/imports/ch13/list_ch13_04_pong_top_st.v:61]
+INFO: [Synth 8-256] done synthesizing module 'pong_top_st' (8#1) [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/imports/ch13/list_ch13_04_pong_top_st.v:2]
 WARNING: [Synth 8-3331] design pong_text has unconnected port ball[1]
 WARNING: [Synth 8-3331] design pong_text has unconnected port ball[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 350.375 ; gain = 119.594
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 349.871 ; gain = 118.926
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -96,65 +91,58 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 350.375 ; gain = 119.594
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 349.871 ; gain = 118.926
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/constrs_1/imports/415/Nexys4DDR_Master.xdc]
-Finished Parsing XDC File [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/constrs_1/imports/415/Nexys4DDR_Master.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/constrs_1/imports/415/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pong_top_st_propImpl.xdc].
+Parsing XDC File [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/constrs_1/imports/415/Nexys4DDR_Master.xdc]
+Finished Parsing XDC File [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/constrs_1/imports/415/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/constrs_1/imports/415/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/pong_top_st_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/pong_top_st_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 662.613 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 663.102 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 662.613 ; gain = 431.832
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 663.102 ; gain = 432.156
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 662.613 ; gain = 431.832
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 663.102 ; gain = 432.156
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 662.613 ; gain = 431.832
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 663.102 ; gain = 432.156
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "n_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-WARNING: [Synth 8-6014] Unused sequential element v_count_reg_reg was removed.  [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/imports/ch13/list_ch13_01_vga_sync.v:38]
-WARNING: [Synth 8-6014] Unused sequential element h_count_reg_reg was removed.  [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/imports/ch13/list_ch13_01_vga_sync.v:39]
-INFO: [Synth 8-4471] merging register 'miss_reg_reg' into 'hit_reg_reg' [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:150]
-INFO: [Synth 8-4471] merging register 'last_h_reg' into 'last_m_reg' [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:178]
-INFO: [Synth 8-4471] merging register 'point_reg' into 'loss_reg' [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:179]
-WARNING: [Synth 8-6014] Unused sequential element miss_reg_reg was removed.  [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:150]
-WARNING: [Synth 8-6014] Unused sequential element point_reg was removed.  [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:179]
-WARNING: [Synth 8-6014] Unused sequential element last_h_reg was removed.  [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:178]
-WARNING: [Synth 8-6014] Unused sequential element ball_x_reg_reg was removed.  [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:129]
-WARNING: [Synth 8-6014] Unused sequential element ball_y_reg_reg was removed.  [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:130]
-WARNING: [Synth 8-6014] Unused sequential element addr_reg_reg was removed.  [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/new/font_rom.v:20]
+WARNING: [Synth 8-6014] Unused sequential element v_count_reg_reg was removed.  [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/imports/ch13/list_ch13_01_vga_sync.v:38]
+WARNING: [Synth 8-6014] Unused sequential element h_count_reg_reg was removed.  [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/imports/ch13/list_ch13_01_vga_sync.v:39]
+WARNING: [Synth 8-6014] Unused sequential element ball_x_reg_reg was removed.  [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:152]
+WARNING: [Synth 8-6014] Unused sequential element ball_y_reg_reg was removed.  [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:153]
+WARNING: [Synth 8-6014] Unused sequential element addr_reg_reg was removed.  [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/new/font_rom.v:20]
 INFO: [Synth 8-5544] ROM "char_addr_l" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "char_addr_r" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "dig1_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5546] ROM "btnreg" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "btnreg" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "dc" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-327] inferring latch for variable 'falling_reg' [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:223]
-WARNING: [Synth 8-327] inferring latch for variable 'btnLast_reg' [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:250]
-WARNING: [Synth 8-327] inferring latch for variable 'move_reg' [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:251]
-WARNING: [Synth 8-327] inferring latch for variable 'char_addr_r_reg' [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/new/pong_text.v:121]
-WARNING: [Synth 8-327] inferring latch for variable 'rgb_next_reg' [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/imports/ch13/list_ch13_04_pong_top_st.v:75]
+WARNING: [Synth 8-327] inferring latch for variable 'btnLast_reg' [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:276]
+WARNING: [Synth 8-327] inferring latch for variable 'move_reg' [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:277]
+WARNING: [Synth 8-327] inferring latch for variable 'char_addr_r_reg' [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/new/pong_text.v:121]
+WARNING: [Synth 8-327] inferring latch for variable 'rgb_next_reg' [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/imports/ch13/list_ch13_04_pong_top_st.v:82]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 662.613 ; gain = 431.832
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 663.102 ; gain = 432.156
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -178,13 +166,14 @@ Detailed RTL Component Info :
 	                8 Bit    Registers := 1     
 	                4 Bit    Registers := 6     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 8     
+	                1 Bit    Registers := 13    
 +---ROMs : 
 	                              ROMs := 1     
 +---Muxes : 
-	   9 Input     12 Bit        Muxes := 1     
+	  17 Input     14 Bit        Muxes := 1     
 	  16 Input     12 Bit        Muxes := 1     
-	   2 Input     12 Bit        Muxes := 9     
+	   2 Input     12 Bit        Muxes := 13    
+	   5 Input     12 Bit        Muxes := 1     
 	   2 Input     10 Bit        Muxes := 3     
 	   3 Input     10 Bit        Muxes := 1     
 	  14 Input      7 Bit        Muxes := 1     
@@ -211,6 +200,7 @@ Module pong_top_st
 Detailed RTL Component Info : 
 +---Registers : 
 	               12 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
 +---Muxes : 
 	   2 Input     12 Bit        Muxes := 3     
 	   2 Input      4 Bit        Muxes := 3     
@@ -251,18 +241,20 @@ Detailed RTL Component Info :
 Module pong_graph_st 
 Detailed RTL Component Info : 
 +---Adders : 
-	   3 Input     10 Bit       Adders := 14    
 	   2 Input     10 Bit       Adders := 4     
+	   3 Input     10 Bit       Adders := 14    
 	   3 Input      4 Bit       Adders := 2     
 +---Registers : 
 	               10 Bit    Registers := 18    
 	                4 Bit    Registers := 1     
-	                1 Bit    Registers := 3     
+	                1 Bit    Registers := 7     
 +---Muxes : 
-	   9 Input     12 Bit        Muxes := 1     
+	  17 Input     14 Bit        Muxes := 1     
 	  16 Input     12 Bit        Muxes := 1     
-	   2 Input     10 Bit        Muxes := 1     
+	   2 Input     12 Bit        Muxes := 4     
+	   5 Input     12 Bit        Muxes := 1     
 	   3 Input     10 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 1     
 Module font_rom 
 Detailed RTL Component Info : 
@@ -304,11 +296,11 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "btnreg" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-6014] Unused sequential element text_unit/font_unit/addr_reg_reg was removed.  [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/new/font_rom.v:20]
-WARNING: [Synth 8-6014] Unused sequential element vsync_unit/h_count_reg_reg was removed.  [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/imports/ch13/list_ch13_01_vga_sync.v:39]
-WARNING: [Synth 8-6014] Unused sequential element vsync_unit/v_count_reg_reg was removed.  [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/imports/ch13/list_ch13_01_vga_sync.v:38]
-WARNING: [Synth 8-6014] Unused sequential element pong_grf_unit/ball_x_reg_reg was removed.  [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:129]
-WARNING: [Synth 8-6014] Unused sequential element pong_grf_unit/ball_y_reg_reg was removed.  [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:130]
+WARNING: [Synth 8-6014] Unused sequential element text_unit/font_unit/addr_reg_reg was removed.  [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/new/font_rom.v:20]
+WARNING: [Synth 8-6014] Unused sequential element vsync_unit/h_count_reg_reg was removed.  [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/imports/ch13/list_ch13_01_vga_sync.v:39]
+WARNING: [Synth 8-6014] Unused sequential element vsync_unit/v_count_reg_reg was removed.  [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/imports/ch13/list_ch13_01_vga_sync.v:38]
+WARNING: [Synth 8-6014] Unused sequential element pong_grf_unit/ball_x_reg_reg was removed.  [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:152]
+WARNING: [Synth 8-6014] Unused sequential element pong_grf_unit/ball_y_reg_reg was removed.  [C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:153]
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/y_delta_reg_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/y_delta_reg_reg[1] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/y_delta_reg_reg[2] )
@@ -327,10 +319,8 @@ INFO: [Synth 8-3886] merging instance 'pong_grf_unit/x_delta_reg_reg[5]' (FDCE) 
 INFO: [Synth 8-3886] merging instance 'pong_grf_unit/x_delta_reg_reg[6]' (FDCE) to 'pong_grf_unit/x_delta_reg_reg[7]'
 INFO: [Synth 8-3886] merging instance 'pong_grf_unit/x_delta_reg_reg[7]' (FDCE) to 'pong_grf_unit/x_delta_reg_reg[8]'
 INFO: [Synth 8-3886] merging instance 'pong_grf_unit/x_delta_reg_reg[8]' (FDCE) to 'pong_grf_unit/x_delta_reg_reg[9]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/hit_reg_reg )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/walls_up_velocity_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/walls_up_velocity_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/walls_up_velocity_reg[2] )
+INFO: [Synth 8-3886] merging instance 'pong_grf_unit/walls_up_velocity_reg[1]' (FDCE) to 'pong_grf_unit/walls_up_velocity_reg[2]'
+INFO: [Synth 8-3886] merging instance 'pong_grf_unit/walls_up_velocity_reg[2]' (FDCE) to 'pong_grf_unit/walls_up_velocity_reg[3]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/walls_up_velocity_reg[3] )
 INFO: [Synth 8-3886] merging instance 'rgb_next_reg[0]' (LDC) to 'rgb_next_reg[1]'
 INFO: [Synth 8-3886] merging instance 'rgb_next_reg[3]' (LDC) to 'rgb_next_reg[2]'
@@ -340,98 +330,6 @@ INFO: [Synth 8-3886] merging instance 'rgb_reg_reg[0]' (FDE) to 'rgb_reg_reg[1]'
 INFO: [Synth 8-3886] merging instance 'rgb_reg_reg[3]' (FDE) to 'rgb_reg_reg[2]'
 INFO: [Synth 8-3886] merging instance 'rgb_reg_reg[8]' (FDE) to 'rgb_reg_reg[9]'
 INFO: [Synth 8-3886] merging instance 'rgb_reg_reg[11]' (FDE) to 'rgb_reg_reg[10]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyt7_reg_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyt7_reg_reg[1] )
-INFO: [Synth 8-3886] merging instance 'pong_grf_unit/hit_reg_reg' (FDE) to 'pong_grf_unit/last_m_reg'
-INFO: [Synth 8-3886] merging instance 'pong_grf_unit/last_m_reg' (FDE) to 'pong_grf_unit/loss_reg'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyb1_reg_reg[0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyb1_reg_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyb1_reg_reg[2] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyb1_reg_reg[3] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyb1_reg_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyb1_reg_reg[5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyt1_reg_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyt1_reg_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyt1_reg_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyt1_reg_reg[3] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyt1_reg_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyt1_reg_reg[5] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyb2_reg_reg[0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyb2_reg_reg[1] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyb2_reg_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyb2_reg_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyb2_reg_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyb2_reg_reg[5] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyt2_reg_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyt2_reg_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyt2_reg_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyt2_reg_reg[3] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyt2_reg_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyt2_reg_reg[5] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyt3_reg_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyt3_reg_reg[1] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyt3_reg_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyt3_reg_reg[3] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyt3_reg_reg[4] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyt3_reg_reg[5] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyb3_reg_reg[0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyb3_reg_reg[1] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyb3_reg_reg[2] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyb3_reg_reg[3] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyb3_reg_reg[4] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyb3_reg_reg[5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyb4_reg_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyb4_reg_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyb4_reg_reg[2] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyb4_reg_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyb4_reg_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyb4_reg_reg[5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyt4_reg_reg[0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyt4_reg_reg[1] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyt4_reg_reg[2] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyt4_reg_reg[3] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyt4_reg_reg[4] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyt4_reg_reg[5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyt5_reg_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyt5_reg_reg[1] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyt5_reg_reg[2] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyt5_reg_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyt5_reg_reg[4] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyt5_reg_reg[5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyb5_reg_reg[0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyb5_reg_reg[1] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyb5_reg_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyb5_reg_reg[3] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyb5_reg_reg[4] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyb5_reg_reg[5] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyt6_reg_reg[0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyt6_reg_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyt6_reg_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyt6_reg_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyt6_reg_reg[4] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyt6_reg_reg[5] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyb6_reg_reg[0] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyb6_reg_reg[1] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyb6_reg_reg[2] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyb6_reg_reg[3] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyb6_reg_reg[4] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyb6_reg_reg[5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyb7_reg_reg[0] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyb7_reg_reg[1] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyb7_reg_reg[2] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyb7_reg_reg[3] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyb7_reg_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyb7_reg_reg[5] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyt7_reg_reg[2] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/wyt7_reg_reg[3] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/wyt7_reg_reg[4] )
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/loss_reg )
-INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/falling_reg) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/falling_reg__0) is unused and will be removed from module pong_top_st.
-CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'pong_grf_unit/falling_reg__0/Q' [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:127]
-CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:127]
-CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v:127]
 WARNING: [Synth 8-3332] Sequential element (text_unit/char_addr_r_reg[6]) is unused and will be removed from module pong_top_st.
 WARNING: [Synth 8-3332] Sequential element (text_unit/char_addr_r_reg[5]) is unused and will be removed from module pong_top_st.
 WARNING: [Synth 8-3332] Sequential element (text_unit/char_addr_r_reg[4]) is unused and will be removed from module pong_top_st.
@@ -440,99 +338,34 @@ WARNING: [Synth 8-3332] Sequential element (text_unit/char_addr_r_reg[2]) is unu
 WARNING: [Synth 8-3332] Sequential element (text_unit/char_addr_r_reg[1]) is unused and will be removed from module pong_top_st.
 WARNING: [Synth 8-3332] Sequential element (text_unit/char_addr_r_reg[0]) is unused and will be removed from module pong_top_st.
 WARNING: [Synth 8-3332] Sequential element (ps2_rx_unit/b_reg_reg[0]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/loss_reg) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/x_delta_reg_reg[1]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/ball_x_reg_reg[1]) is unused and will be removed from module pong_top_st.
 WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/walls_up_velocity_reg[3]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/walls_up_velocity_reg[2]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/walls_up_velocity_reg[1]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/walls_up_velocity_reg[0]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb7_reg_reg[9]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb7_reg_reg[8]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb7_reg_reg[7]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb7_reg_reg[6]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb7_reg_reg[5]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb7_reg_reg[4]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb7_reg_reg[3]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb7_reg_reg[2]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb7_reg_reg[1]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb7_reg_reg[0]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt7_reg_reg[9]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt7_reg_reg[8]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt7_reg_reg[7]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt7_reg_reg[6]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt7_reg_reg[5]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt7_reg_reg[4]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt7_reg_reg[3]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt7_reg_reg[2]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt7_reg_reg[1]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt7_reg_reg[0]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt6_reg_reg[9]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt6_reg_reg[8]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt6_reg_reg[7]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt6_reg_reg[6]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt6_reg_reg[5]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt6_reg_reg[4]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt6_reg_reg[3]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt6_reg_reg[2]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt6_reg_reg[1]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt6_reg_reg[0]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb6_reg_reg[9]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb6_reg_reg[8]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb6_reg_reg[7]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb6_reg_reg[6]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb6_reg_reg[5]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb6_reg_reg[4]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb6_reg_reg[3]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb6_reg_reg[2]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb6_reg_reg[1]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb6_reg_reg[0]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt5_reg_reg[9]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt5_reg_reg[8]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt5_reg_reg[7]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt5_reg_reg[6]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt5_reg_reg[5]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt5_reg_reg[4]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt5_reg_reg[3]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt5_reg_reg[2]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt5_reg_reg[1]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt5_reg_reg[0]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb5_reg_reg[9]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb5_reg_reg[8]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb5_reg_reg[7]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb5_reg_reg[6]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb5_reg_reg[5]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb5_reg_reg[4]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb5_reg_reg[3]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb5_reg_reg[2]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb5_reg_reg[1]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb5_reg_reg[0]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb4_reg_reg[9]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb4_reg_reg[8]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb4_reg_reg[7]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb4_reg_reg[6]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb4_reg_reg[5]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb4_reg_reg[4]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb4_reg_reg[3]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb4_reg_reg[2]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb4_reg_reg[1]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyb4_reg_reg[0]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt4_reg_reg[9]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt4_reg_reg[8]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt4_reg_reg[7]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt4_reg_reg[6]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt4_reg_reg[5]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt4_reg_reg[4]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt4_reg_reg[3]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt4_reg_reg[2]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt4_reg_reg[1]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt4_reg_reg[0]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt3_reg_reg[9]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt3_reg_reg[8]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt3_reg_reg[7]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt3_reg_reg[6]) is unused and will be removed from module pong_top_st.
-WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/wyt3_reg_reg[5]) is unused and will be removed from module pong_top_st.
-INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/y_delta_reg_reg[9]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/y_delta_reg_reg[8]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/y_delta_reg_reg[7]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/y_delta_reg_reg[6]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/y_delta_reg_reg[5]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/y_delta_reg_reg[4]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/y_delta_reg_reg[3]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/y_delta_reg_reg[2]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/y_delta_reg_reg[1]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/y_delta_reg_reg[0]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/ball_y_reg_reg[9]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/ball_y_reg_reg[8]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/ball_y_reg_reg[7]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/ball_y_reg_reg[6]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/ball_y_reg_reg[5]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/ball_y_reg_reg[4]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/ball_y_reg_reg[3]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/ball_y_reg_reg[2]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/ball_y_reg_reg[1]) is unused and will be removed from module pong_top_st.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\pong_grf_unit/ball_y_reg0_inferred /\pong_grf_unit/ball_y_reg_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\pong_grf_unit/ball_x_reg0_inferred /\pong_grf_unit/ball_x_reg_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/ball_x_reg_reg[0]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/ball_y_reg_reg[0]) is unused and will be removed from module pong_top_st.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 662.613 ; gain = 431.832
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 663.102 ; gain = 432.156
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -560,13 +393,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 662.613 ; gain = 431.832
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 663.102 ; gain = 432.156
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 662.613 ; gain = 431.832
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 663.102 ; gain = 432.156
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -577,9 +410,20 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/hit_reg_reg) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/last_h_reg) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (pong_grf_unit/point_reg) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (score/dig0_reg_reg[3]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (score/dig0_reg_reg[2]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (score/dig0_reg_reg[1]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (score/dig0_reg_reg[0]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (score/dig1_reg_reg[3]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (score/dig1_reg_reg[2]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (score/dig1_reg_reg[1]) is unused and will be removed from module pong_top_st.
+WARNING: [Synth 8-3332] Sequential element (score/dig1_reg_reg[0]) is unused and will be removed from module pong_top_st.
 INFO: [Synth 8-4480] The timing for the instance text_unit/font_unit/addr_reg_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 662.613 ; gain = 431.832
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 670.875 ; gain = 439.930
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -603,7 +447,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 662.613 ; gain = 431.832
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 670.875 ; gain = 439.930
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -616,7 +460,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 662.613 ; gain = 431.832
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 670.875 ; gain = 439.930
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -628,25 +472,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 662.613 ; gain = 431.832
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 670.875 ; gain = 439.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 662.613 ; gain = 431.832
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 670.875 ; gain = 439.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 662.613 ; gain = 431.832
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 670.875 ; gain = 439.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 662.613 ; gain = 431.832
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 670.875 ; gain = 439.930
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -662,44 +506,46 @@ Report Cell Usage:
 +------+---------+------+
 |      |Cell     |Count |
 +------+---------+------+
-|1     |BUFG     |     2|
-|2     |CARRY4   |    38|
-|3     |LUT1     |    13|
-|4     |LUT2     |   167|
-|5     |LUT3     |    13|
-|6     |LUT4     |    42|
-|7     |LUT5     |    37|
-|8     |LUT6     |    73|
-|9     |RAMB18E1 |     1|
-|10    |FDCE     |    56|
-|11    |FDPE     |     3|
-|12    |FDRE     |    11|
-|13    |LD       |     4|
-|14    |LDC      |     8|
-|15    |IBUF     |     5|
-|16    |OBUF     |    32|
+|1     |BUFG     |     3|
+|2     |CARRY4   |    80|
+|3     |LUT1     |    19|
+|4     |LUT2     |   186|
+|5     |LUT3     |    33|
+|6     |LUT4     |   182|
+|7     |LUT5     |    45|
+|8     |LUT6     |    75|
+|9     |MUXF7    |     3|
+|10    |RAMB18E1 |     1|
+|11    |FDCE     |   142|
+|12    |FDPE     |    67|
+|13    |FDRE     |    16|
+|14    |LD       |     4|
+|15    |LDC      |     8|
+|16    |IBUF     |     4|
+|17    |OBUF     |    32|
 +------+---------+------+
 
 Report Instance Areas: 
 +------+----------------+------------------+------+
 |      |Instance        |Module            |Cells |
 +------+----------------+------------------+------+
-|1     |top             |                  |   505|
-|2     |  myclk         |clk_50m_generator |     2|
-|3     |  pong_grf_unit |pong_graph_st     |    46|
-|4     |  ps2_rx_unit   |ps2RX             |    46|
-|5     |  text_unit     |pong_text         |     4|
-|6     |    font_unit   |font_rom          |     4|
-|7     |  vsync_unit    |vga_sync          |   349|
+|1     |top             |                  |   900|
+|2     |  losses        |counter           |    17|
+|3     |  myclk         |clk_50m_generator |     2|
+|4     |  pong_grf_unit |pong_graph_st     |   464|
+|5     |  ps2_rx_unit   |ps2RX             |    46|
+|6     |  text_unit     |pong_text         |     4|
+|7     |    font_unit   |font_rom          |     4|
+|8     |  vsync_unit    |vga_sync          |   307|
 +------+----------------+------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 662.613 ; gain = 431.832
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 670.875 ; gain = 439.930
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 3 critical warnings and 212 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:18 . Memory (MB): peak = 662.613 ; gain = 119.594
-Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 662.613 ; gain = 431.832
+Synthesis finished with 0 errors, 0 critical warnings and 57 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:19 . Memory (MB): peak = 670.875 ; gain = 126.699
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 670.875 ; gain = 439.930
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 56 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 97 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
@@ -708,9 +554,9 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   LD => LDCE: 4 instances
   LDC => LDCE: 8 instances
 
-164 Infos, 131 Warnings, 3 Critical Warnings and 0 Errors encountered.
+71 Infos, 67 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 662.613 ; gain = 439.598
-INFO: [Common 17-1381] The checkpoint 'C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.runs/synth_1/pong_top_st.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 662.613 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Nov 27 22:33:20 2017...
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 670.875 ; gain = 447.695
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.runs/synth_1/pong_top_st.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 670.875 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 28 12:03:02 2017...

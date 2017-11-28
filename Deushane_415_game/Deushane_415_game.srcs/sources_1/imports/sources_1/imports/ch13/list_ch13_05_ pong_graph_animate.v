@@ -31,8 +31,9 @@ module pong_graph_st
      reg moving;
      reg [1:0] btnLast;
      reg last_m, last_h;
-     reg point, loss;
-     reg hit, miss, miss_reg, hit_reg;
+     //reg point, loss;
+     reg miss_reg, hit_reg;
+     wire hit, miss;
      
    
    // constant and signal declaration
@@ -101,24 +102,46 @@ module pong_graph_st
      assign ball_rgb = 12'hE62;   // red, ball rgb output
 
    always @*
-   case (rom_addr)
-      4'h0: rom_x = 16'b0000001110000000; //   
-      4'h1: rom_x = 16'b0000010001000000; // 
-      4'h2: rom_x = 16'b0000101010100000; // 
-      4'h3: rom_x = 16'b0000010001000000; // 
-      4'h4: rom_x = 16'b0000001110000000; // 
-      4'h5: rom_x = 16'b0000000100000000; // 
-      4'h6: rom_x = 16'b0000011111000000; // 
-      4'h7: rom_x = 16'b0000101110100000; //
-      4'h8: rom_x = 16'b0000100100010000; //   
-      4'h9: rom_x = 16'b0000100100010000; // 
-      4'ha: rom_x = 16'b0000000100000000; // 
-      4'hb: rom_x = 16'b0000001110000000; // 
-      4'hc: rom_x = 16'b0000010001000000; // 
-      4'hd: rom_x = 16'b0000010001000000; // 
-      4'he: rom_x = 16'b0000010001000000; // 
-      4'hf: rom_x = 16'b0000110001100000; //
-   endcase
+   if(!falling) begin
+       case (rom_addr)
+          4'h0: rom_x = 16'b0000001110000000; //   
+          4'h1: rom_x = 16'b0000010001000000; // 
+          4'h2: rom_x = 16'b0000101010100000; // 
+          4'h3: rom_x = 16'b0000010001000000; // 
+          4'h4: rom_x = 16'b0000001110000000; // 
+          4'h5: rom_x = 16'b0000000100000000; // 
+          4'h6: rom_x = 16'b0000011111000000; // 
+          4'h7: rom_x = 16'b0000101110100000; //
+          4'h8: rom_x = 16'b0000100100010000; //   
+          4'h9: rom_x = 16'b0000100100010000; // 
+          4'ha: rom_x = 16'b0000000100000000; // 
+          4'hb: rom_x = 16'b0000001110000000; // 
+          4'hc: rom_x = 16'b0000010001000000; // 
+          4'hd: rom_x = 16'b0000010001000000; // 
+          4'he: rom_x = 16'b0000010001000000; // 
+          4'hf: rom_x = 16'b0000110001100000; //
+       endcase
+   end
+   else begin
+          case (rom_addr)
+          4'h0: rom_x = 16'b0000001110000000; //   
+          4'h1: rom_x = 16'b0000010001000000; // 
+          4'h2: rom_x = 16'b0010101010101000; // 
+          4'h3: rom_x = 16'b0010010001001000; // 
+          4'h4: rom_x = 16'b0001001110010000; // 
+          4'h5: rom_x = 16'b0000100100100000; // 
+          4'h6: rom_x = 16'b0000011111000000; // 
+          4'h7: rom_x = 16'b0000001110000000; //
+          4'h8: rom_x = 16'b0000000100000000; //   
+          4'h9: rom_x = 16'b0000000100000000; // 
+          4'ha: rom_x = 16'b0000000100000000; // 
+          4'hb: rom_x = 16'b0000001110000000; // 
+          4'hc: rom_x = 16'b0000010001000000; // 
+          4'hd: rom_x = 16'b0000100000100000; // 
+          4'he: rom_x = 16'b0001000000010000; // 
+          4'hf: rom_x = 16'b0010000000001000; //
+      endcase
+   end
 
    // registers
    always @(posedge clk, posedge reset)
@@ -127,10 +150,10 @@ module pong_graph_st
             falling <=0;
             start<=0;
             ball_x_reg <= 30;
-            ball_y_reg <= 66;
+            ball_y_reg <= 63;
             x_delta_reg <= 10'h000;
             y_delta_reg <= 10'h000;
-            walls_up_velocity <=1;
+            walls_up_velocity <=0;
              wyt1_reg<=80; wyb1_reg<=90;  //80,90
              wyt2_reg<=145; wyb2_reg<=135; //145,135
              wyt3_reg<=245; wyb3_reg<=255; //245,255
@@ -148,6 +171,7 @@ module pong_graph_st
             
             hit_reg <= hit;
             miss_reg <= miss;
+
             
             wyt1_reg <= wall_y_t_1;
             wyb1_reg <= wall_y_b_1;
@@ -169,6 +193,11 @@ module pong_graph_st
             
             wyt7_reg <= wall_y_t_7;
             wyb7_reg <= wall_y_b_7;
+            
+            //falling
+            if(falling) walls_up_velocity<=1;
+            if(!falling&&(ball_x_reg>300))falling<=1;
+            
             //debonunce circuithit for hit miss
             if(miss_reg==1 && last_m == 1)
                 loss <= 0;
@@ -220,31 +249,28 @@ module pong_graph_st
    assign ball_x_next = (refr_tick) ? ball_x_reg+x_delta_reg : ball_x_reg ; 
    assign ball_y_next = (refr_tick) ? ball_y_reg+y_delta_reg : ball_y_reg ;
    //new bar positions
-   assign wall_y_t_1 = (refr_tick&&falling) ? wyt1_reg-walls_up_velocity : wyt1_reg ; 
-   assign wall_y_t_2 = (refr_tick&&falling) ? wyt2_reg-walls_up_velocity : wyt2_reg ;
-   assign wall_y_t_3 = (refr_tick&&falling) ? wyt3_reg-walls_up_velocity : wyt3_reg ; 
-   assign wall_y_t_4 = (refr_tick&&falling) ? wyt4_reg-walls_up_velocity : wyt4_reg ;
-   assign wall_y_t_5 = (refr_tick&&falling) ? wyt5_reg-walls_up_velocity : wyt5_reg ; 
-   assign wall_y_t_6 = (refr_tick&&falling) ? wyt6_reg-walls_up_velocity : wyt6_reg ;
-   assign wall_y_t_7 = (refr_tick&&falling) ? wyt7_reg-walls_up_velocity : wyt7_reg ; 
+   assign wall_y_t_1 = (refr_tick) ? wyt1_reg-walls_up_velocity : wyt1_reg ; 
+   assign wall_y_t_2 = (refr_tick) ? wyt2_reg-walls_up_velocity : wyt2_reg ;
+   assign wall_y_t_3 = (refr_tick) ? wyt3_reg-walls_up_velocity : wyt3_reg ; 
+   assign wall_y_t_4 = (refr_tick) ? wyt4_reg-walls_up_velocity : wyt4_reg ;
+   assign wall_y_t_5 = (refr_tick) ? wyt5_reg-walls_up_velocity : wyt5_reg ; 
+   assign wall_y_t_6 = (refr_tick) ? wyt6_reg-walls_up_velocity : wyt6_reg ;
+   assign wall_y_t_7 = (refr_tick) ? wyt7_reg-walls_up_velocity : wyt7_reg ; 
    
-   assign wall_y_b_1 = (refr_tick&&falling) ? wyb1_reg-walls_up_velocity : wyb1_reg ; 
-   assign wall_y_b_2 = (refr_tick&&falling) ? wyb2_reg-walls_up_velocity : wyb2_reg ;
-   assign wall_y_b_3 = (refr_tick&&falling) ? wyb3_reg-walls_up_velocity : wyb3_reg ; 
-   assign wall_y_b_4 = (refr_tick&&falling) ? wyb4_reg-walls_up_velocity : wyb4_reg ;
-   assign wall_y_b_5 = (refr_tick&&falling) ? wyb5_reg-walls_up_velocity : wyb5_reg ; 
-   assign wall_y_b_6 = (refr_tick&&falling) ? wyb6_reg-walls_up_velocity : wyb6_reg ;
-   assign wall_y_b_7 = (refr_tick&&falling) ? wyb7_reg-walls_up_velocity : wyb7_reg ; 
+   assign wall_y_b_1 = (refr_tick) ? wyb1_reg-walls_up_velocity : wyb1_reg ; 
+   assign wall_y_b_2 = (refr_tick) ? wyb2_reg-walls_up_velocity : wyb2_reg ;
+   assign wall_y_b_3 = (refr_tick) ? wyb3_reg-walls_up_velocity : wyb3_reg ; 
+   assign wall_y_b_4 = (refr_tick) ? wyb4_reg-walls_up_velocity : wyb4_reg ;
+   assign wall_y_b_5 = (refr_tick) ? wyb5_reg-walls_up_velocity : wyb5_reg ; 
+   assign wall_y_b_6 = (refr_tick) ? wyb6_reg-walls_up_velocity : wyb6_reg ;
+   assign wall_y_b_7 = (refr_tick) ? wyb7_reg-walls_up_velocity : wyb7_reg ; 
+   
+   assign miss = (l1_on || l2_on || l3_on || l4_on || l5_on || l6_on || l7_on) && ball_on; 
    
    always @*
    begin
       x_delta_next = x_delta_reg;
       y_delta_next = y_delta_reg;
-      
-      miss = 0;
-      hit = 0;
-       if(!falling&&(ball_x_l>WALL_X_R_1))
-         falling=1;
       
     if (refr_tick) begin
         if(btn!=btnLast && btn!=2'b11)

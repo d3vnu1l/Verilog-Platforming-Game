@@ -2,11 +2,11 @@
 # Vivado v2017.2 (64-bit)
 # SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
 # IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
-# Start of session at: Mon Nov 27 22:33:26 2017
-# Process ID: 8364
-# Current directory: C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.runs/impl_1
+# Start of session at: Tue Nov 28 12:03:09 2017
+# Process ID: 12992
+# Current directory: C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.runs/impl_1
 # Command line: vivado.exe -log pong_top_st.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source pong_top_st.tcl -notrace
-# Log file: C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.runs/impl_1/pong_top_st.vdi
-# Journal file: C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.runs/impl_1\vivado.jou
+# Log file: C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.runs/impl_1/pong_top_st.vdi
+# Journal file: C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source pong_top_st.tcl -notrace

@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.srcs/constrs_1/imports/415/Nexys4DDR_Master.xdc rfile:../../../Deushane_415_game.srcs/constrs_1/imports/415/Nexys4DDR_Master.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.srcs/constrs_1/imports/415/Nexys4DDR_Master.xdc rfile:../../../Deushane_415_game.srcs/constrs_1/imports/415/Nexys4DDR_Master.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:7 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN E3    IOSTANDARD LVCMOS33 } [get_ports { clk }]; #IO_L12P_T1_MRCC_35 Sch=clk100mhz
 set_property src_info {type:XDC file:1 line:33 export:INPUT save:INPUT read:READ} [current_design]
@@ -37,8 +37,6 @@ set_property src_info {type:XDC file:1 line:50 export:INPUT save:INPUT read:READ
 set_property -dict { PACKAGE_PIN R12   IOSTANDARD LVCMOS33 } [get_ports { btn[1] }]; #IO_L5P_T0_D06_14 Sch=led16_b
 set_property src_info {type:XDC file:1 line:53 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN G14   IOSTANDARD LVCMOS33 } [get_ports { btn[0] }]; #IO_L15N_T2_DQS_ADV_B_15 Sch=led17_b
-set_property src_info {type:XDC file:1 line:84 export:INPUT save:INPUT read:READ} [current_design]
-set_property -dict { PACKAGE_PIN N17   IOSTANDARD LVCMOS33 } [get_ports { reset }]; #IO_L9P_T1_DQS_14 Sch=btnc
 set_property src_info {type:XDC file:1 line:88 export:INPUT save:INPUT read:READ} [current_design]
 set_property -dict { PACKAGE_PIN P18   IOSTANDARD LVCMOS33 } [get_ports { reset_clk }]; #IO_L9N_T1_DQS_D13_14 Sch=btnd
 set_property src_info {type:XDC file:1 line:156 export:INPUT save:INPUT read:READ} [current_design]

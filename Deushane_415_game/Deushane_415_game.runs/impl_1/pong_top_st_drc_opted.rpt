@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Mon Nov 27 22:33:45 2017
+| Date         : Tue Nov 28 12:03:28 2017
 | Host         : DESKTOP-JUECRTH running 64-bit major release  (build 9200)
 | Command      : report_drc -file pong_top_st_drc_opted.rpt
 | Design       : pong_top_st

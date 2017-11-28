@@ -1,7 +1,7 @@
 // Listing 13.4
 module pong_top_st
    (
-    input wire clk, reset, reset_clk,
+    input wire clk, reset_clk,
     input wire ps2d, ps2c,
     output wire hsync, vsync,
     output wire [3:0] red,
@@ -23,6 +23,8 @@ module pong_top_st
    wire [7:0] scan_data;
    reg scan_last;
    reg dc;
+   reg reset_reg;
+   wire reset;
    
    localparam backgroundColor = 12'hC6F;
 
@@ -64,13 +66,18 @@ module pong_top_st
                 end   
             endcase
             
-   always @(posedge clk_50m)
+   always @(posedge clk_50m) begin
       if (pixel_tick)
          rgb_reg <= rgb_next;
+      if(loss)reset_reg=1;
+      else reset_reg=0;
+  end
+
+     
    //=======================================================
    // rgb multiplexing circuit
    //=======================================================
-   always @* 
+   always @* begin
       if (~video_on)
          rgb_next <= 12'h000; // blank the edge/retrace
       else
@@ -83,6 +90,10 @@ module pong_top_st
            rgb_next = text_rgb;
          else
            rgb_next = backgroundColor; // black background
+           
+ end
+    
+    assign reset = reset_reg;
  
    //buttons
    assign btn[0] = btnreg[0];

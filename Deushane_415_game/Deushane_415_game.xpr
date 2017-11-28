@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="20" Path="C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.xpr">
+<Project Version="7" Minor="20" Path="C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="1159fda2af0d43f5b9e5140781a1918e"/>
@@ -54,7 +54,7 @@
       <Filter Type="Srcs"/>
       <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/imports/new/clk_50m_generator.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Documents/415/415_Lab5/415_Lab5.srcs/sources_1/imports/imports/new/clk_50m_generator.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../415_Lab5/415_Lab5.srcs/sources_1/imports/imports/new/clk_50m_generator.v"/>
           <Attr Name="ImportTime" Val="1507812860"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -63,7 +63,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/sources_1/new/counter.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Documents/415/415_Lab5/415_Lab5.srcs/sources_1/new/counter.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../415_Lab5/415_Lab5.srcs/sources_1/new/counter.v"/>
           <Attr Name="ImportTime" Val="1507817132"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -72,7 +72,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/sources_1/new/font_rom.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Documents/415/415_Lab5/415_Lab5.srcs/sources_1/new/font_rom.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../415_Lab5/415_Lab5.srcs/sources_1/new/font_rom.v"/>
           <Attr Name="ImportTime" Val="1507820126"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -81,7 +81,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/imports/ch13/list_ch13_01_vga_sync.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Documents/415/415_Lab5/415_Lab5.srcs/sources_1/imports/imports/ch13/list_ch13_01_vga_sync.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../415_Lab5/415_Lab5.srcs/sources_1/imports/imports/ch13/list_ch13_01_vga_sync.v"/>
           <Attr Name="ImportTime" Val="1507812860"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -90,7 +90,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Documents/415/415_Lab5/415_Lab5.srcs/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../415_Lab5/415_Lab5.srcs/sources_1/imports/ch13/list_ch13_05_ pong_graph_animate.v"/>
           <Attr Name="ImportTime" Val="1508245087"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -99,7 +99,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/sources_1/new/pong_text.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Documents/415/415_Lab5/415_Lab5.srcs/sources_1/new/pong_text.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../415_Lab5/415_Lab5.srcs/sources_1/new/pong_text.v"/>
           <Attr Name="ImportTime" Val="1508241428"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -108,7 +108,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/new/ps2RX.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Documents/415/Lab6_p1/Lab6_p1.srcs/sources_1/new/ps2RX.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../Lab6_p1/Lab6_p1.srcs/sources_1/new/ps2RX.v"/>
           <Attr Name="ImportTime" Val="1508246389"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -117,7 +117,7 @@
       </File>
       <File Path="$PSRCDIR/sources_1/imports/sources_1/imports/imports/ch13/list_ch13_04_pong_top_st.v">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Documents/415/415_Lab5/415_Lab5.srcs/sources_1/imports/imports/ch13/list_ch13_04_pong_top_st.v"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../415_Lab5/415_Lab5.srcs/sources_1/imports/imports/ch13/list_ch13_04_pong_top_st.v"/>
           <Attr Name="ImportTime" Val="1508241066"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -134,7 +134,7 @@
       <Filter Type="Constrs"/>
       <File Path="$PSRCDIR/constrs_1/imports/415/Nexys4DDR_Master.xdc">
         <FileInfo>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../Documents/415/415_Lab5/415_Lab5.srcs/constrs_1/imports/415/Nexys4DDR_Master.xdc"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../415_Lab5/415_Lab5.srcs/constrs_1/imports/415/Nexys4DDR_Master.xdc"/>
           <Attr Name="ImportTime" Val="1508236116"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
@@ -183,12 +183,14 @@
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy>
-        <ReportConfig RunStep="synth_design" Name="synth_1_synth_report_utilization_0" Spec="report_utilization" IsDisabled="false">
+        <ReportConfig RunStep="synth_design" Name="synth_1_synth_report_utilization_0" Spec="report_utilization" IsDisabled="true">
           <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
+          <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
         </ReportConfig>
-        <ReportConfig RunStep="synth_design" Name="synth_1_synth_synthesis_report_0" Spec="" IsDisabled="false">
+        <ReportConfig RunStep="synth_design" Name="synth_1_synth_synthesis_report_0" Spec="" IsDisabled="true">
           <ReportConfigOption Name="dummy_option" Type="string"/>
+          <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
           <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
         </ReportConfig>
       </ReportStrategy>
@@ -209,84 +211,104 @@
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy>
-        <ReportConfig RunStep="opt_design" Name="impl_1_opt_report_drc_0" Spec="report_drc" IsDisabled="false">
+        <ReportConfig RunStep="opt_design" Name="impl_1_opt_report_drc_0" Spec="report_drc" IsDisabled="true">
           <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
-        </ReportConfig>
-        <ReportConfig RunStep="opt_design" Name="impl_1_opt_report_timing_summary_0" Spec="report_timing_summary" IsDisabled="false">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
         </ReportConfig>
-        <ReportConfig RunStep="power_opt_design" Name="impl_1_power_opt_report_timing_summary_0" Spec="report_timing_summary" IsDisabled="false">
+        <ReportConfig RunStep="opt_design" Name="impl_1_opt_report_timing_summary_0" Spec="report_timing_summary" IsDisabled="true">
           <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
-        </ReportConfig>
-        <ReportConfig RunStep="place_design" Name="impl_1_place_report_control_sets_0" Spec="report_control_sets" IsDisabled="false">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
         </ReportConfig>
-        <ReportConfig RunStep="place_design" Name="impl_1_place_report_incremental_reuse_0" Spec="report_incremental_reuse" IsDisabled="false">
+        <ReportConfig RunStep="power_opt_design" Name="impl_1_power_opt_report_timing_summary_0" Spec="report_timing_summary" IsDisabled="true">
           <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
-        </ReportConfig>
-        <ReportConfig RunStep="place_design" Name="impl_1_place_report_incremental_reuse_1" Spec="report_incremental_reuse" IsDisabled="false">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
         </ReportConfig>
-        <ReportConfig RunStep="place_design" Name="impl_1_place_report_io_0" Spec="report_io" IsDisabled="false">
+        <ReportConfig RunStep="place_design" Name="impl_1_place_report_control_sets_0" Spec="report_control_sets" IsDisabled="true">
           <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
-        </ReportConfig>
-        <ReportConfig RunStep="place_design" Name="impl_1_place_report_timing_summary_0" Spec="report_timing_summary" IsDisabled="false">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
         </ReportConfig>
-        <ReportConfig RunStep="place_design" Name="impl_1_place_report_utilization_0" Spec="report_utilization" IsDisabled="false">
+        <ReportConfig RunStep="place_design" Name="impl_1_place_report_incremental_reuse_0" Spec="report_incremental_reuse" IsDisabled="true">
           <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
-        </ReportConfig>
-        <ReportConfig RunStep="phys_opt_design" Name="impl_1_phys_opt_report_timing_summary_0" Spec="report_timing_summary" IsDisabled="false">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
         </ReportConfig>
-        <ReportConfig RunStep="route_design" Name="impl_1_route_implementation_log_0" Spec="" IsDisabled="false">
+        <ReportConfig RunStep="place_design" Name="impl_1_place_report_incremental_reuse_1" Spec="report_incremental_reuse" IsDisabled="true">
           <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
-        </ReportConfig>
-        <ReportConfig RunStep="route_design" Name="impl_1_route_report_clock_utilization_0" Spec="report_clock_utilization" IsDisabled="false">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
         </ReportConfig>
-        <ReportConfig RunStep="route_design" Name="impl_1_route_report_drc_0" Spec="report_drc" IsDisabled="false">
+        <ReportConfig RunStep="place_design" Name="impl_1_place_report_io_0" Spec="report_io" IsDisabled="true">
           <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
-        </ReportConfig>
-        <ReportConfig RunStep="route_design" Name="impl_1_route_report_incremental_reuse_0" Spec="report_incremental_reuse" IsDisabled="false">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
         </ReportConfig>
-        <ReportConfig RunStep="route_design" Name="impl_1_route_report_methodology_0" Spec="report_methodology" IsDisabled="false">
+        <ReportConfig RunStep="place_design" Name="impl_1_place_report_timing_summary_0" Spec="report_timing_summary" IsDisabled="true">
           <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
-        </ReportConfig>
-        <ReportConfig RunStep="route_design" Name="impl_1_route_report_power_0" Spec="report_power" IsDisabled="false">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
         </ReportConfig>
-        <ReportConfig RunStep="route_design" Name="impl_1_route_report_route_status_0" Spec="report_route_status" IsDisabled="false">
+        <ReportConfig RunStep="place_design" Name="impl_1_place_report_utilization_0" Spec="report_utilization" IsDisabled="true">
           <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
-        </ReportConfig>
-        <ReportConfig RunStep="route_design" Name="impl_1_route_report_timing_summary_0" Spec="report_timing_summary" IsDisabled="false">
-          <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
         </ReportConfig>
-        <ReportConfig RunStep="write_bitstream" Name="impl_1_bitstream_implementation_log_0" Spec="" IsDisabled="false">
+        <ReportConfig RunStep="phys_opt_design" Name="impl_1_phys_opt_report_timing_summary_0" Spec="report_timing_summary" IsDisabled="true">
           <ReportConfigOption Name="dummy_option" Type="string"/>
           <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
+          <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
         </ReportConfig>
-        <ReportConfig RunStep="write_bitstream" Name="impl_1_bitstream_report_webtalk_0" Spec="" IsDisabled="false">
+        <ReportConfig RunStep="route_design" Name="impl_1_route_implementation_log_0" Spec="" IsDisabled="true">
           <ReportConfigOption Name="dummy_option" Type="string"/>
+          <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
+          <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
+        </ReportConfig>
+        <ReportConfig RunStep="route_design" Name="impl_1_route_report_clock_utilization_0" Spec="report_clock_utilization" IsDisabled="true">
+          <ReportConfigOption Name="dummy_option" Type="string"/>
+          <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
+          <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
+        </ReportConfig>
+        <ReportConfig RunStep="route_design" Name="impl_1_route_report_drc_0" Spec="report_drc" IsDisabled="true">
+          <ReportConfigOption Name="dummy_option" Type="string"/>
+          <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
+          <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
+        </ReportConfig>
+        <ReportConfig RunStep="route_design" Name="impl_1_route_report_incremental_reuse_0" Spec="report_incremental_reuse" IsDisabled="true">
+          <ReportConfigOption Name="dummy_option" Type="string"/>
+          <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
+          <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
+        </ReportConfig>
+        <ReportConfig RunStep="route_design" Name="impl_1_route_report_methodology_0" Spec="report_methodology" IsDisabled="true">
+          <ReportConfigOption Name="dummy_option" Type="string"/>
+          <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
+          <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
+        </ReportConfig>
+        <ReportConfig RunStep="route_design" Name="impl_1_route_report_power_0" Spec="report_power" IsDisabled="true">
+          <ReportConfigOption Name="dummy_option" Type="string"/>
+          <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
+          <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
+        </ReportConfig>
+        <ReportConfig RunStep="route_design" Name="impl_1_route_report_route_status_0" Spec="report_route_status" IsDisabled="true">
+          <ReportConfigOption Name="dummy_option" Type="string"/>
+          <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
+          <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
+        </ReportConfig>
+        <ReportConfig RunStep="route_design" Name="impl_1_route_report_timing_summary_0" Spec="report_timing_summary" IsDisabled="true">
+          <ReportConfigOption Name="dummy_option" Type="string"/>
+          <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
+          <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
+        </ReportConfig>
+        <ReportConfig RunStep="write_bitstream" Name="impl_1_bitstream_implementation_log_0" Spec="" IsDisabled="true">
+          <ReportConfigOption Name="dummy_option" Type="string"/>
+          <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
+          <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
+        </ReportConfig>
+        <ReportConfig RunStep="write_bitstream" Name="impl_1_bitstream_report_webtalk_0" Spec="" IsDisabled="true">
+          <ReportConfigOption Name="dummy_option" Type="string"/>
+          <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
           <ReportConfigOption Name="MORE_OPTIONS" Type="string"/>
         </ReportConfig>
       </ReportStrategy>
