@@ -82,6 +82,9 @@ module pong_graph_st
    localparam WALL_X_L_7 = 0;
    localparam WALL_X_R_7 = 300;
    
+   reg falling;
+   reg start;
+   
    localparam WALL_SIZE_Y = 20;
    //ENDLEVELS
    
@@ -121,11 +124,13 @@ module pong_graph_st
    always @(posedge clk, posedge reset)
       if (reset)
          begin
+            falling <=0;
+            start<=0;
             ball_x_reg <= 30;
-            ball_y_reg <= wall_y_t_1-BALL_SIZE;
+            ball_y_reg <= 66;
             x_delta_reg <= 10'h000;
             y_delta_reg <= 10'h000;
-            walls_up_velocity <=2;
+            walls_up_velocity <=1;
              wyt1_reg<=80; wyb1_reg<=90;  //80,90
              wyt2_reg<=145; wyb2_reg<=135; //145,135
              wyt3_reg<=245; wyb3_reg<=255; //245,255
@@ -185,13 +190,13 @@ module pong_graph_st
    // pixel within wall
    assign wall_on = (WALL_Y_T<=pix_y) && (pix_y<=WALL_Y_B);
    // levels wall on
-   assign l1_on = (wall_y_t_1<=pix_y) && (pix_y<=wall_y_b_1) && (WALL_X_L_1<=pix_x) && (pix_x<=WALL_X_R_1);
-   assign l2_on = (wall_y_t_2<=pix_y) && (pix_y<=wall_y_b_2) && (WALL_X_L_2<=pix_x) && (pix_x<=WALL_X_R_2);
-   assign l3_on = (wall_y_t_3<=pix_y) && (pix_y<=wall_y_b_3) && (WALL_X_L_3<=pix_x) && (pix_x<=WALL_X_R_3);
-   assign l4_on = (wall_y_t_4<=pix_y) && (pix_y<=wall_y_b_4) && (WALL_X_L_4<=pix_x) && (pix_x<=WALL_X_R_4);
-   assign l5_on = (wall_y_t_5<=pix_y) && (pix_y<=wall_y_b_5) && (WALL_X_L_5<=pix_x) && (pix_x<=WALL_X_R_5);
-   assign l6_on = (wall_y_t_6<=pix_y) && (pix_y<=wall_y_b_6) && (WALL_X_L_6<=pix_x) && (pix_x<=WALL_X_R_6);
-   assign l7_on = (wall_y_t_7<=pix_y) && (pix_y<=wall_y_b_7) && (WALL_X_L_7<=pix_x) && (pix_x<=WALL_X_R_7);
+   assign l1_on = (pix_y>WALL_Y_B) && (wall_y_t_1<=pix_y) && (pix_y<=wall_y_b_1) && (WALL_X_L_1<=pix_x) && (pix_x<=WALL_X_R_1);
+   assign l2_on = (pix_y>WALL_Y_B) && (wall_y_t_2<=pix_y) && (pix_y<=wall_y_b_2) && (WALL_X_L_2<=pix_x) && (pix_x<=WALL_X_R_2);
+   assign l3_on = (pix_y>WALL_Y_B) && (wall_y_t_3<=pix_y) && (pix_y<=wall_y_b_3) && (WALL_X_L_3<=pix_x) && (pix_x<=WALL_X_R_3);
+   assign l4_on = (pix_y>WALL_Y_B) && (wall_y_t_4<=pix_y) && (pix_y<=wall_y_b_4) && (WALL_X_L_4<=pix_x) && (pix_x<=WALL_X_R_4);
+   assign l5_on = (pix_y>WALL_Y_B) && (wall_y_t_5<=pix_y) && (pix_y<=wall_y_b_5) && (WALL_X_L_5<=pix_x) && (pix_x<=WALL_X_R_5);
+   assign l6_on = (pix_y>WALL_Y_B) && (wall_y_t_6<=pix_y) && (pix_y<=wall_y_b_6) && (WALL_X_L_6<=pix_x) && (pix_x<=WALL_X_R_6);
+   assign l7_on = (pix_y>WALL_Y_B) && (wall_y_t_7<=pix_y) && (pix_y<=wall_y_b_7) && (WALL_X_L_7<=pix_x) && (pix_x<=WALL_X_R_7);
   
 
    // boundary
@@ -215,21 +220,21 @@ module pong_graph_st
    assign ball_x_next = (refr_tick) ? ball_x_reg+x_delta_reg : ball_x_reg ; 
    assign ball_y_next = (refr_tick) ? ball_y_reg+y_delta_reg : ball_y_reg ;
    //new bar positions
-   assign wall_y_t_1 = (refr_tick) ? wyt1_reg-walls_up_velocity : wyt1_reg ; 
-   assign wall_y_t_2 = (refr_tick) ? wyt2_reg-walls_up_velocity : wyt2_reg ;
-   assign wall_y_t_3 = (refr_tick) ? wyt3_reg-walls_up_velocity : wyt3_reg ; 
-   assign wall_y_t_4 = (refr_tick) ? wyt4_reg-walls_up_velocity : wyt4_reg ;
-   assign wall_y_t_5 = (refr_tick) ? wyt5_reg-walls_up_velocity : wyt5_reg ; 
-   assign wall_y_t_6 = (refr_tick) ? wyt6_reg-walls_up_velocity : wyt6_reg ;
-   assign wall_y_t_7 = (refr_tick) ? wyt7_reg-walls_up_velocity : wyt7_reg ; 
+   assign wall_y_t_1 = (refr_tick&&falling) ? wyt1_reg-walls_up_velocity : wyt1_reg ; 
+   assign wall_y_t_2 = (refr_tick&&falling) ? wyt2_reg-walls_up_velocity : wyt2_reg ;
+   assign wall_y_t_3 = (refr_tick&&falling) ? wyt3_reg-walls_up_velocity : wyt3_reg ; 
+   assign wall_y_t_4 = (refr_tick&&falling) ? wyt4_reg-walls_up_velocity : wyt4_reg ;
+   assign wall_y_t_5 = (refr_tick&&falling) ? wyt5_reg-walls_up_velocity : wyt5_reg ; 
+   assign wall_y_t_6 = (refr_tick&&falling) ? wyt6_reg-walls_up_velocity : wyt6_reg ;
+   assign wall_y_t_7 = (refr_tick&&falling) ? wyt7_reg-walls_up_velocity : wyt7_reg ; 
    
-   assign wall_y_b_1 = (refr_tick) ? wyb1_reg-walls_up_velocity : wyb1_reg ; 
-   assign wall_y_b_2 = (refr_tick) ? wyb2_reg-walls_up_velocity : wyb2_reg ;
-   assign wall_y_b_3 = (refr_tick) ? wyb3_reg-walls_up_velocity : wyb3_reg ; 
-   assign wall_y_b_4 = (refr_tick) ? wyb4_reg-walls_up_velocity : wyb4_reg ;
-   assign wall_y_b_5 = (refr_tick) ? wyb5_reg-walls_up_velocity : wyb5_reg ; 
-   assign wall_y_b_6 = (refr_tick) ? wyb6_reg-walls_up_velocity : wyb6_reg ;
-   assign wall_y_b_7 = (refr_tick) ? wyb7_reg-walls_up_velocity : wyb7_reg ; 
+   assign wall_y_b_1 = (refr_tick&&falling) ? wyb1_reg-walls_up_velocity : wyb1_reg ; 
+   assign wall_y_b_2 = (refr_tick&&falling) ? wyb2_reg-walls_up_velocity : wyb2_reg ;
+   assign wall_y_b_3 = (refr_tick&&falling) ? wyb3_reg-walls_up_velocity : wyb3_reg ; 
+   assign wall_y_b_4 = (refr_tick&&falling) ? wyb4_reg-walls_up_velocity : wyb4_reg ;
+   assign wall_y_b_5 = (refr_tick&&falling) ? wyb5_reg-walls_up_velocity : wyb5_reg ; 
+   assign wall_y_b_6 = (refr_tick&&falling) ? wyb6_reg-walls_up_velocity : wyb6_reg ;
+   assign wall_y_b_7 = (refr_tick&&falling) ? wyb7_reg-walls_up_velocity : wyb7_reg ; 
    
    always @*
    begin
@@ -238,6 +243,8 @@ module pong_graph_st
       
       miss = 0;
       hit = 0;
+       if(!falling&&(ball_x_l>WALL_X_R_1))
+         falling=1;
       
     if (refr_tick) begin
         if(btn!=btnLast && btn!=2'b11)
@@ -248,6 +255,7 @@ module pong_graph_st
         else if (move[0]) begin
             x_delta_next=-4;
         end
+        else x_delta_next=0;
         btnLast = btn;
      end
    end
@@ -256,8 +264,6 @@ module pong_graph_st
    always @* begin
       if (~video_on)
          graph_rgb = 12'h000; // blank
-      else if (wall_on)
-            graph_rgb = wall_rgb;
       else if (l1_on)
             graph_rgb = l1_rgb;
       else if (l2_on)
@@ -272,6 +278,8 @@ module pong_graph_st
           graph_rgb = l6_rgb;
       else if (l7_on)
           graph_rgb = l7_rgb;
+    else if (wall_on)
+          graph_rgb = wall_rgb;
       else
            graph_rgb = 12'h000;  // black
        

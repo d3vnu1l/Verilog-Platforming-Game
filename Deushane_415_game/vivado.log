@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2017.2 (64-bit)
+# SW Build 1909853 on Thu Jun 15 18:39:09 MDT 2017
+# IP Build 1909766 on Thu Jun 15 19:58:00 MDT 2017
+# Start of session at: Mon Nov 27 23:26:48 2017
+# Process ID: 13104
+# Current directory: C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9040 C:\Users\ryan\Documents\415\Verilog-Platforming-Game\Deushane_415_game\Deushane_415_game.xpr
+# Log file: C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/vivado.log
+# Journal file: C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/ryan/Desktop/Deushane_415_game' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IPUserFilesDir: Could not find the directory 'C:/Users/ryan/Documents/415/Verilog-Platforming-Game/Deushane_415_game/Deushane_415_game.ip_user_files', nor could it be found using path 'C:/Users/ryan/Desktop/Deushane_415_game/Deushane_415_game.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.2/data/ip'.
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 27 23:31:47 2017...

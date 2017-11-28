@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
-| Tool Version     : Vivado v.2017.3 (lin64) Build 2018833 Wed Oct  4 19:58:07 MDT 2017
-| Date             : Tue Nov 14 13:41:46 2017
-| Host             : archlinux running 64-bit unknown
+| Tool Version     : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date             : Mon Nov 27 22:34:10 2017
+| Host             : DESKTOP-JUECRTH running 64-bit major release  (build 9200)
 | Command          : report_power -file pong_top_st_power_routed.rpt -pb pong_top_st_power_summary_routed.pb -rpx pong_top_st_power_routed.rpx
 | Design           : pong_top_st
 | Device           : xc7a100tcsg324-1
@@ -29,21 +29,18 @@ Table of Contents
 1. Summary
 ----------
 
-+--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.637        |
-| Design Power Budget (W)  | Unspecified* |
-| Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.534        |
-| Device Static (W)        | 0.103        |
-| Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 77.5         |
-| Junction Temperature (C) | 32.5         |
-| Confidence Level         | Low          |
-| Setting File             | ---          |
-| Simulation Activity File | ---          |
-| Design Nets Matched      | NA           |
-+--------------------------+--------------+
-* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
++--------------------------+-------+
+| Total On-Chip Power (W)  | 0.878 |
+| Dynamic (W)              | 0.778 |
+| Device Static (W)        | 0.100 |
+| Effective TJA (C/W)      | 4.6   |
+| Max Ambient (C)          | 81.0  |
+| Junction Temperature (C) | 29.0  |
+| Confidence Level         | Low   |
+| Setting File             | ---   |
+| Simulation Activity File | ---   |
+| Design Nets Matched      | NA    |
++--------------------------+-------+
 
 
 1.1 On-Chip Components
@@ -52,18 +49,17 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.418 |      550 |       --- |             --- |
-|   LUT as Logic |     0.314 |      277 |     63400 |            0.44 |
-|   BUFG         |     0.052 |        2 |        32 |            6.25 |
-|   CARRY4       |     0.042 |       29 |     15850 |            0.18 |
-|   Register     |     0.010 |      128 |    126800 |            0.10 |
-|   F7/F8 Muxes  |    <0.001 |        4 |     63400 |           <0.01 |
-|   Others       |     0.000 |       12 |       --- |             --- |
-| Signals        |     0.392 |      375 |       --- |             --- |
-| Block RAM      |     0.483 |      0.5 |       135 |            0.37 |
-| I/O            |     0.241 |       37 |       210 |           17.62 |
-| Static Power   |     0.103 |          |           |                 |
-| Total          |     1.637 |          |           |                 |
+| Slice Logic    |     0.288 |      485 |       --- |             --- |
+|   LUT as Logic |     0.254 |      245 |     63400 |            0.39 |
+|   CARRY4       |     0.013 |       38 |     15850 |            0.24 |
+|   BUFG         |     0.012 |        2 |        32 |            6.25 |
+|   Register     |     0.010 |       84 |    126800 |            0.07 |
+|   Others       |     0.000 |       15 |       --- |             --- |
+| Signals        |     0.319 |      290 |       --- |             --- |
+| Block RAM      |     0.030 |      0.5 |       135 |            0.37 |
+| I/O            |     0.142 |       37 |       210 |           17.62 |
+| Static Power   |     0.100 |          |           |                 |
+| Total          |     0.878 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -73,16 +69,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     1.287 |       1.267 |      0.020 |
-| Vccaux    |       1.800 |     0.027 |       0.008 |      0.019 |
-| Vcco33    |       3.300 |     0.069 |       0.065 |      0.004 |
+| Vccint    |       1.000 |     0.664 |       0.646 |      0.017 |
+| Vccaux    |       1.800 |     0.023 |       0.005 |      0.018 |
+| Vcco33    |       3.300 |     0.041 |       0.037 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.039 |       0.038 |      0.000 |
+| Vccbram   |       1.000 |     0.003 |       0.002 |      0.000 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
@@ -140,15 +136,13 @@ Table of Contents
 +-----------------+-----------+
 | Name            | Power (W) |
 +-----------------+-----------+
-| pong_top_st     |     1.534 |
-|   losses        |    <0.001 |
-|   myclk         |     0.021 |
-|   pong_grf_unit |     0.074 |
+| pong_top_st     |     0.778 |
+|   myclk         |     0.005 |
+|   pong_grf_unit |     0.025 |
 |   ps2_rx_unit   |     0.035 |
-|   score         |    <0.001 |
-|   text_unit     |     0.536 |
-|     font_unit   |     0.536 |
-|   vsync_unit    |     0.487 |
+|   text_unit     |     0.097 |
+|     font_unit   |     0.097 |
+|   vsync_unit    |     0.443 |
 +-----------------+-----------+
 
 

@@ -47,13 +47,13 @@ module pong_top_st
    counter score(.clk(clk_50m), .reset(reset), .d_inc(point), .d_clr(loss), .dig0(scr0), .dig1(scr1));
    counter losses(.clk(clk_50m), .reset(reset), .d_inc(loss), .d_clr(reset), .dig0(los0), .dig1(los1));
 
-   always @(posedge scan_done_tick) 
+   always @(negedge scan_done_tick) 
             //decode keyboard
             case(dc)
                 1'b1: begin case(scan_data)
                     8'h1C: btnreg[0] <= 0;
                     8'h23: btnreg[1] <= 0;
-                endcase
+                    endcase
                 dc <= 0;
                 end
                 1'b0 : begin case(scan_data)

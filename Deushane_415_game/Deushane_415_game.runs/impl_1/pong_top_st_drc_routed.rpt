@@ -1,8 +1,8 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
-| Tool Version : Vivado v.2017.3 (lin64) Build 2018833 Wed Oct  4 19:58:07 MDT 2017
-| Date         : Tue Nov 14 13:41:44 2017
-| Host         : archlinux running 64-bit unknown
+| Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
+| Date         : Mon Nov 27 22:34:09 2017
+| Host         : DESKTOP-JUECRTH running 64-bit major release  (build 9200)
 | Command      : report_drc -file pong_top_st_drc_routed.rpt -pb pong_top_st_drc_routed.pb -rpx pong_top_st_drc_routed.rpx
 | Design       : pong_top_st
 | Device       : xc7a100tcsg324-1
@@ -62,24 +62,24 @@ Related violations: <none>
 
 PDRC-153#2 Warning
 Gated clock check  
-Net ps2_rx_unit/dc_reg_0 is a gated clock net sourced by a combinational pin ps2_rx_unit/btnreg[1]_i_2/O, cell ps2_rx_unit/btnreg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net ps2_rx_unit/btnreg_reg[1]_0 is a gated clock net sourced by a combinational pin ps2_rx_unit/btnreg[1]_i_2/O, cell ps2_rx_unit/btnreg[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#3 Warning
 Gated clock check  
-Net vsync_unit/ball_y_reg_reg[1]_0[0] is a gated clock net sourced by a combinational pin vsync_unit/btnLast_reg[1]_i_1/O, cell vsync_unit/btnLast_reg[1]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net vsync_unit/video_on is a gated clock net sourced by a combinational pin vsync_unit/rgb_next_reg[10]_i_2/O, cell vsync_unit/rgb_next_reg[10]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#4 Warning
 Gated clock check  
-Net vsync_unit/video_on is a gated clock net sourced by a combinational pin vsync_unit/rgb_next_reg[10]_i_2/O, cell vsync_unit/rgb_next_reg[10]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net vsync_unit/x_delta_reg_reg[9][0] is a gated clock net sourced by a combinational pin vsync_unit/btnLast_reg[1]_i_1/O, cell vsync_unit/btnLast_reg[1]_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PLHOLDVIO-2#1 Warning
 Non-Optimal connections which could lead to hold violations  
 A LUT ps2_rx_unit/btnreg[1]_i_2 is driving clock pin of 3 cells. This could lead to large hold time violations. First few involved cells are:
-    btnreg_reg[1] {FDRE}
     btnreg_reg[0] {FDRE}
+    btnreg_reg[1] {FDRE}
     dc_reg {FDRE}
 
 Related violations: <none>
