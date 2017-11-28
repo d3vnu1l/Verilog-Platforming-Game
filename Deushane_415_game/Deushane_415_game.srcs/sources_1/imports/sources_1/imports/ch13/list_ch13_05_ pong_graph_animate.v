@@ -34,7 +34,11 @@ module pong_graph_st
      //reg point, loss;
      reg miss_reg, hit_reg;
      wire hit, miss;
+     wire [3:0] dig0, dig1;
+     wire [31:0] dig;
      
+     counter tickcount(.clk(clk), .reset(reset), .d_inc(refr_tick), .d_clr(reset), .dig0(dig0), .dig1(dig1));
+     counterLong timecount(.clk(clk), .reset(reset), .d_inc(refr_tick), .d_clr(reset), .dig(dig));
    
    // constant and signal declaration
    // x, y coordinates (0,0) to (639,479)
@@ -60,12 +64,12 @@ module pong_graph_st
    
    wire [9:0] wall_y_t_3, wall_y_b_3; //190,200
    reg [9:0] wyt3_reg ,wyb3_reg;
-   localparam WALL_X_L_3 = 0;
-   localparam WALL_X_R_3 = 300;
+   localparam WALL_X_L_3 = 200;
+   localparam WALL_X_R_3 = MAX_X-1;
    
    wire [9:0] wall_y_t_4, wall_y_b_4; //245,255
    reg [9:0] wyt4_reg ,wyb4_reg;
-   localparam WALL_X_L_4 = 250;
+   localparam WALL_X_L_4 = 100;
    localparam WALL_X_R_4 = MAX_X-1;
    
    wire [9:0] wall_y_t_5, wall_y_b_5; //300,310
@@ -80,26 +84,25 @@ module pong_graph_st
    
    wire [9:0] wall_y_t_7, wall_y_b_7; //400,410
    reg [9:0] wyt7_reg ,wyb7_reg;
-   localparam WALL_X_L_7 = 0;
-   localparam WALL_X_R_7 = 300;
+   localparam WALL_X_L_7 = 150;
+   localparam WALL_X_R_7 = 550;
    
    reg falling;
-   reg start;
    
    localparam WALL_SIZE_Y = 20;
    //ENDLEVELS
    
     // wall rgb output
-     assign wall_rgb = 12'h000; // blue
+     assign wall_rgb = 12'hF00; // blue
      assign floor_rgb = 12'h090;
      assign l1_rgb = 12'hFFF; // white
-     assign l2_rgb = 12'hF00; // blue
+     assign l2_rgb = 12'hF10; // blue
      assign l3_rgb = 12'hF30; // blue
      assign l4_rgb = 12'hF60; // blue
      assign l5_rgb = 12'hF90;// blue
      assign l6_rgb = 12'hFC0;// blue
      assign l7_rgb = 12'hFF0;// blue
-     assign ball_rgb = 12'hE62;   // red, ball rgb output
+     assign ball_rgb = 12'hF00;   // red, ball rgb output
 
    always @*
    if(!falling) begin
@@ -123,24 +126,63 @@ module pong_graph_st
        endcase
    end
    else begin
+        if(btn[0])
           case (rom_addr)
           4'h0: rom_x = 16'b0000001110000000; //   
           4'h1: rom_x = 16'b0000010001000000; // 
-          4'h2: rom_x = 16'b0010101010101000; // 
-          4'h3: rom_x = 16'b0010010001001000; // 
-          4'h4: rom_x = 16'b0001001110010000; // 
-          4'h5: rom_x = 16'b0000100100100000; // 
-          4'h6: rom_x = 16'b0000011111000000; // 
-          4'h7: rom_x = 16'b0000001110000000; //
+          4'h2: rom_x = 16'b0000100010101000; // 
+          4'h3: rom_x = 16'b0000010001001000; // 
+          4'h4: rom_x = 16'b0000001110010000; // 
+          4'h5: rom_x = 16'b0000000100100000; // 
+          4'h6: rom_x = 16'b0000000111000000; // 
+          4'h7: rom_x = 16'b0000000110000000; //
           4'h8: rom_x = 16'b0000000100000000; //   
           4'h9: rom_x = 16'b0000000100000000; // 
           4'ha: rom_x = 16'b0000000100000000; // 
-          4'hb: rom_x = 16'b0000001110000000; // 
-          4'hc: rom_x = 16'b0000010001000000; // 
-          4'hd: rom_x = 16'b0000100000100000; // 
-          4'he: rom_x = 16'b0001000000010000; // 
-          4'hf: rom_x = 16'b0010000000001000; //
+          4'hb: rom_x = 16'b000000100000000; // 
+          4'hc: rom_x = 16'b0000010000000000; // 
+          4'hd: rom_x = 16'b0000100000000000; // 
+          4'he: rom_x = 16'b0001000000000000; // 
+          4'hf: rom_x = 16'b0010000000000000; //
       endcase
+        else if(btn[1])
+        case (rom_addr)
+        4'h0: rom_x = 16'b0000001110000000; //   
+        4'h1: rom_x = 16'b0000010001000000; // 
+        4'h2: rom_x = 16'b0010101000100000; // 
+        4'h3: rom_x = 16'b0010010001000000; // 
+        4'h4: rom_x = 16'b0001001110000000; // 
+        4'h5: rom_x = 16'b0000100100000000; // 
+        4'h6: rom_x = 16'b0000011100000000; // 
+        4'h7: rom_x = 16'b0000001100000000; //
+        4'h8: rom_x = 16'b0000000100000000; //   
+        4'h9: rom_x = 16'b0000000100000000; // 
+        4'ha: rom_x = 16'b0000000100000000; // 
+        4'hb: rom_x = 16'b0000000010000000; // 
+        4'hc: rom_x = 16'b0000000001000000; // 
+        4'hd: rom_x = 16'b0000000000100000; // 
+        4'he: rom_x = 16'b0000000000010000; // 
+        4'hf: rom_x = 16'b0000000000001000; //
+    endcase
+      else
+      case (rom_addr)
+      4'h0: rom_x = 16'b0000001110000000; //   
+      4'h1: rom_x = 16'b0000010001000000; // 
+      4'h2: rom_x = 16'b0010101010101000; // 
+      4'h3: rom_x = 16'b0010010001001000; // 
+      4'h4: rom_x = 16'b0001001110010000; // 
+      4'h5: rom_x = 16'b0000100100100000; // 
+      4'h6: rom_x = 16'b0000011111000000; // 
+      4'h7: rom_x = 16'b0000001110000000; //
+      4'h8: rom_x = 16'b0000000100000000; //   
+      4'h9: rom_x = 16'b0000000100000000; // 
+      4'ha: rom_x = 16'b0000000100000000; // 
+      4'hb: rom_x = 16'b0000001110000000; // 
+      4'hc: rom_x = 16'b0000010001000000; // 
+      4'hd: rom_x = 16'b0000100000100000; // 
+      4'he: rom_x = 16'b0001000000010000; // 
+      4'hf: rom_x = 16'b0010000000001000; //
+  endcase
    end
 
    // registers
@@ -148,9 +190,8 @@ module pong_graph_st
       if (reset)
          begin
             falling <=0;
-            start<=0;
             ball_x_reg <= 30;
-            ball_y_reg <= 63;
+            ball_y_reg <= 64;
             x_delta_reg <= 10'h000;
             y_delta_reg <= 10'h000;
             walls_up_velocity <=0;
@@ -291,23 +332,25 @@ module pong_graph_st
       if (~video_on)
          graph_rgb = 12'h000; // blank
       else if (l1_on)
-            graph_rgb = l1_rgb;
+            graph_rgb = {dig1,8'h00};
       else if (l2_on)
-            graph_rgb = l2_rgb;
+            graph_rgb = {~dig1,8'h00};
       else if (l3_on)
-           graph_rgb = l3_rgb;
+           graph_rgb = {dig1,8'h00};
       else if (l4_on)
-           graph_rgb = l4_rgb;
+           graph_rgb = {~dig1,8'h00};
       else if (l5_on)
-           graph_rgb = l5_rgb;
+           graph_rgb = {dig1,8'h00};
       else if (l6_on)
-          graph_rgb = l6_rgb;
+          graph_rgb = {~dig1,8'h00};
       else if (l7_on)
-          graph_rgb = l7_rgb;
-    else if (wall_on)
+          graph_rgb = {dig1,8'h00};
+      else if (wall_on)
           graph_rgb = wall_rgb;
+      else if (ball_on)
+        graph_rgb = {12'hFFF};
       else
-           graph_rgb = 12'h000;  // black
+        graph_rgb = 12'h000;  // black
        
     end
 endmodule

@@ -1,7 +1,7 @@
 // Listing 13.4
 module pong_top_st
    (
-    input wire clk, reset_clk,
+    input wire clk, reset, reset_clk,
     input wire ps2d, ps2c,
     output wire hsync, vsync,
     output wire [3:0] red,
@@ -24,9 +24,9 @@ module pong_top_st
    reg scan_last;
    reg dc;
    reg reset_reg;
-   wire reset;
+   wire reset_game;
    
-   localparam backgroundColor = 12'hC6F;
+   localparam backgroundColor = 12'h005;
 
    // body
    // instantiate vga sync circuit
@@ -38,7 +38,7 @@ module pong_top_st
    vga_sync vsync_unit(.clk(clk_50m), .reset(reset), .hsync(hsync), .vsync(vsync),
        .video_on(video_on), .p_tick(pixel_tick), .pixel_x(pixel_x), .pixel_y(pixel_y));
    // instantiate graphic generator
-   pong_graph_st pong_grf_unit(.clk(clk_50m), .reset(reset), .video_on(video_on), 
+   pong_graph_st pong_grf_unit(.clk(clk_50m), .reset(reset_game), .video_on(video_on), 
    .btn(btn), .pix_x(pixel_x), .pix_y(pixel_y), .point(point), .loss(loss), 
    .graph_rgb(graph_rgb), .graph_on(graph_on));
    //text unit
@@ -93,7 +93,7 @@ module pong_top_st
            
  end
     
-    assign reset = reset_reg;
+    assign reset_game = reset_reg;
  
    //buttons
    assign btn[0] = btnreg[0];
